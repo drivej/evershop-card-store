@@ -1,0 +1,33 @@
+{
+  "shop": {
+    "language": "en",
+    "currency": "USD"
+  },
+  "system": {
+    "extensions": [
+      {
+        "name": "sample",
+        "resolve": "extensions/sample",
+        "enabled": true
+      }
+    ],
+    "theme": "sample"
+  },
+  "payment": {
+    "stripe": {
+      "secretKey": "${STRIPE_SECRET_KEY}",
+      "publishableKey": "${STRIPE_PUBLISHABLE_KEY}",
+      "isTestMode": true
+    }
+  },
+  "pricing": {
+    "rounding": "round",
+    "precision": 2,
+    "tax": {
+      "rounding": "round",
+      "precision": 2,
+      "round_level": "unit",
+      "price_including_tax": false
+    }
+  }
+}
