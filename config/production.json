@@ -9,12 +9,17 @@
         "name": "sample",
         "resolve": "extensions/sample",
         "enabled": false
+      },
+      {
+        "name": "kinsta-simple",
+        "resolve": "extensions/kinsta-simple",
+        "enabled": true
       }
     ],
     "theme": "sample",
     "port": "${PORT}",
     "host": "0.0.0.0",
-    "file_storage": "local",
+    "file_storage": "${FILE_STORAGE}",
     "s3": {
       "region": "${AWS_REGION}",
       "bucket": "${AWS_S3_BUCKET}",

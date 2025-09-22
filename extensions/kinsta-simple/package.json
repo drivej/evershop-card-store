@@ -1,0 +1,6 @@
+{
+  "name": "kinsta-simple-storage",
+  "version": "1.0.0",
+  "description": "Simple Kinsta storage for EverShop (CommonJS compatible)",
+  "main": "bootstrap.js"
+}
