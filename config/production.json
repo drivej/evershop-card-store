@@ -13,7 +13,7 @@
       {
         "name": "kinsta-simple",
         "resolve": "extensions/kinsta-simple",
-        "enabled": true
+        "enabled": false
       }
     ],
     "theme": "sample",
