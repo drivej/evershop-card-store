@@ -2,7 +2,27 @@
 
 ## 🚀 Quick Setup Guide
 
-### **Step 1: Configure Environment Variables**
+### **Step 1: Create a Kinsta Disk (Required for Production)**
+
+**⚠️ Important**: Without a disk, uploaded images will be lost when your app restarts!
+
+1. Go to your Kinsta Application dashboard
+2. Navigate to **"Disks"** section
+3. Click **"Add disk"**
+4. Configure the disk:
+   - **Name**: `evershop-media` (or any name you prefer)
+   - **Size**: Start with **5GB** (see size recommendations below)
+   - **Mount path**: `/app/media`
+5. **Attach to Web process**: Ensure the disk is attached to your Web process
+
+#### **Disk Size Recommendations:**
+| Store Size | Recommended Disk Size |
+|------------|----------------------|
+| Small (< 100 products) | 2-5GB |
+| Medium (100-1000 products) | 5-20GB |
+| Large (1000+ products) | 20GB+ |
+
+### **Step 2: Configure Environment Variables**
 
 In your Kinsta Application Hosting dashboard, set these environment variables:
 
@@ -18,16 +38,6 @@ KINSTA_STORAGE_PATH=/app/media
 
 **Replace `your-app-name` with your actual Kinsta application name.**
 
-### **Step 2: Enable Persistent Storage (Optional)**
-
-If you want uploaded images to persist across deployments:
-
-1. Go to your Kinsta Application dashboard
-2. Navigate to "Settings" → "Persistent Storage"
-3. Add a persistent volume:
-   - **Mount Path**: `/app/media`
-   - **Size**: Choose based on your needs (e.g., 5GB)
-
 ### **Step 3: Deploy Your Application**
 
 ```bash
@@ -39,15 +49,27 @@ git push origin master
 ## 📁 **How It Works**
 
 ### **Local Development**
-- Uses `FILE_STORAGE=local` 
+- Uses `FILE_STORAGE=local`
 - Images stored in `media/` directory
 - Served at `http://localhost:3000/assets/*`
 
 ### **Kinsta Production**
 - Uses `FILE_STORAGE=kinsta`
-- Images stored in `/app/media` (persistent storage)
+- Images stored in `/app/media` (Kinsta disk - persistent storage)
 - Served at `https://your-app-name.kinsta.app/assets/*`
 - Automatically uses Kinsta's CDN for fast delivery
+
+### **Why You Need a Kinsta Disk:**
+
+**Without a disk:**
+- ❌ Images disappear when your app restarts/redeploys
+- ❌ No persistence across deployments
+- ❌ Lost user uploads during scaling events
+
+**With a Kinsta disk:**
+- ✅ Images persist across restarts and deployments
+- ✅ Reliable storage for user-uploaded content
+- ✅ Scalable and backed up by Kinsta
 
 ## 🔧 **Configuration Options**
 
@@ -82,6 +104,20 @@ After deployment, test image uploads:
 2. Upload a product image
 3. Check that the image URL uses your Kinsta domain
 4. Verify the image loads quickly from the CDN
+5. **Test persistence**: Restart your application and verify images are still accessible
+
+## ⚠️ **Important Notes**
+
+### **Disk Setup is Critical for Production**
+- **Always create a Kinsta disk** for production deployments
+- Without a disk, all uploaded images will be **permanently lost** on restart
+- The disk ensures your customer's product images persist across deployments
+
+### **Testing Without a Disk (Development Only)**
+If you want to test without creating a disk (not recommended for production):
+```bash
+KINSTA_STORAGE_PATH=/tmp/media  # Temporary storage - will be lost!
+```
 
 ## 📞 **Support**
 
