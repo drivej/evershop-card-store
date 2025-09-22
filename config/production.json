@@ -14,7 +14,7 @@
     "theme": "sample",
     "port": "${PORT}",
     "host": "0.0.0.0",
-    "file_storage": "${FILE_STORAGE}",
+    "file_storage": "local",
     "s3": {
       "region": "${AWS_REGION}",
       "bucket": "${AWS_S3_BUCKET}",

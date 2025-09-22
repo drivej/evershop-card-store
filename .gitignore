@@ -43,4 +43,4 @@ log/
 .DS_Store
 
 # Kinsta-specific (if applicable)
-kinsta/
+kinsta/extensions/s3-storage/
