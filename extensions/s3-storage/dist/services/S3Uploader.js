@@ -1,5 +1,5 @@
-const { PutObjectCommand, S3Client } = require('@aws-sdk/client-s3');
-class S3Uploader {
+import { PutObjectCommand, S3Client } from '@aws-sdk/client-s3';
+export class S3Uploader {
     s3Client;
     config;
     constructor(config){
@@ -63,6 +63,3 @@ class S3Uploader {
         };
     }
 }
-module.exports = {
-    S3Uploader
-};

@@ -1,7 +1,7 @@
-const fs = require('fs/promises');
-const path = require('path');
-const { randomBytes } = require('crypto');
-class KinstaUploader {
+import { randomBytes } from 'crypto';
+import fs from 'fs/promises';
+import path from 'path';
+export class KinstaUploader {
     config;
     storagePath;
     constructor(config){
@@ -103,6 +103,3 @@ class KinstaUploader {
         }
     }
 }
-module.exports = {
-    KinstaUploader
-};

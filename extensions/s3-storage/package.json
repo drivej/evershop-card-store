@@ -1,6 +1,7 @@
 {
   "name": "cdn-storage-extension",
   "version": "1.0.0",
+  "type": "module",
   "description": "CDN storage extension for EverShop (supports AWS S3, Kinsta CDN, and more)",
   "main": "dist/bootstrap.js",
   "scripts": {

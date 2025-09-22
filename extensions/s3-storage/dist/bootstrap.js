@@ -1,8 +1,8 @@
-const { getConfig } = require('@evershop/evershop/lib/util/getConfig');
-const { addProcessor } = require('@evershop/evershop/lib/util/registry');
-module.exports = ()=>{
+import { getConfig } from '@evershop/evershop/lib/util/getConfig';
+import { addProcessor } from '@evershop/evershop/lib/util/registry';
+export default (()=>{
     // Register file uploader based on storage configuration
-    addProcessor('fileUploader', (current)=>{
+    addProcessor('fileUploader', async (current)=>{
         const config = getConfig('system.file_storage');
         if (config === 's3') {
             const s3Config = getConfig('system.s3', {});
@@ -10,7 +10,7 @@ module.exports = ()=>{
                 console.warn('⚠️  S3 storage is enabled but configuration is incomplete. Falling back to local storage.');
                 return current;
             }
-            const { S3Uploader } = require('./services/S3Uploader');
+            const { S3Uploader } = await import('./services/S3Uploader.js');
             const s3Uploader = new S3Uploader({
                 region: s3Config.region,
                 bucket: s3Config.bucket,
@@ -29,7 +29,7 @@ module.exports = ()=>{
         }
         if (config === 'kinsta') {
             const kinstaConfig = getConfig('system.kinsta', {});
-            const { KinstaUploader } = require('./services/KinstaUploader');
+            const { KinstaUploader } = await import('./services/KinstaUploader.js');
             const kinstaUploader = new KinstaUploader({
                 cdnUrl: kinstaConfig.cdnUrl,
                 persistentStoragePath: kinstaConfig.persistentStoragePath,
@@ -47,14 +47,14 @@ module.exports = ()=>{
         return current;
     });
     // Register file deleter based on storage configuration
-    addProcessor('fileDeleter', (current)=>{
+    addProcessor('fileDeleter', async (current)=>{
         const config = getConfig('system.file_storage');
         if (config === 's3') {
             const s3Config = getConfig('system.s3', {});
             if (!s3Config.region || !s3Config.bucket || !s3Config.accessKeyId || !s3Config.secretAccessKey) {
                 return current;
             }
-            const { S3Uploader } = require('./services/S3Uploader');
+            const { S3Uploader } = await import('./services/S3Uploader.js');
             const s3Uploader = new S3Uploader({
                 region: s3Config.region,
                 bucket: s3Config.bucket,
@@ -68,7 +68,7 @@ module.exports = ()=>{
         }
         if (config === 'kinsta') {
             const kinstaConfig = getConfig('system.kinsta', {});
-            const { KinstaUploader } = require('./services/KinstaUploader');
+            const { KinstaUploader } = await import('./services/KinstaUploader.js');
             const kinstaUploader = new KinstaUploader({
                 cdnUrl: kinstaConfig.cdnUrl,
                 persistentStoragePath: kinstaConfig.persistentStoragePath,
@@ -81,14 +81,14 @@ module.exports = ()=>{
         return current;
     });
     // Register file browser based on storage configuration
-    addProcessor('fileBrowser', (current)=>{
+    addProcessor('fileBrowser', async (current)=>{
         const config = getConfig('system.file_storage');
         if (config === 's3') {
             const s3Config = getConfig('system.s3', {});
             if (!s3Config.region || !s3Config.bucket || !s3Config.accessKeyId || !s3Config.secretAccessKey) {
                 return current;
             }
-            const { S3Uploader } = require('./services/S3Uploader');
+            const { S3Uploader } = await import('./services/S3Uploader.js');
             const s3Uploader = new S3Uploader({
                 region: s3Config.region,
                 bucket: s3Config.bucket,
@@ -102,7 +102,7 @@ module.exports = ()=>{
         }
         if (config === 'kinsta') {
             const kinstaConfig = getConfig('system.kinsta', {});
-            const { KinstaUploader } = require('./services/KinstaUploader');
+            const { KinstaUploader } = await import('./services/KinstaUploader.js');
             const kinstaUploader = new KinstaUploader({
                 cdnUrl: kinstaConfig.cdnUrl,
                 persistentStoragePath: kinstaConfig.persistentStoragePath,
@@ -114,4 +114,4 @@ module.exports = ()=>{
         }
         return current;
     });
-};
+});
