@@ -11,8 +11,8 @@
         "enabled": true
       },
       {
-        "name": "cdn-storage",
-        "resolve": "extensions/s3-storage",
+        "name": "kinsta-simple",
+        "resolve": "extensions/kinsta-simple",
         "enabled": true
       }
     ],
