@@ -1,33 +1,10 @@
-import { PutObjectCommand, S3Client } from '@aws-sdk/client-s3';
+const { PutObjectCommand, S3Client } = require('@aws-sdk/client-s3');
 
-interface S3Config {
-  region: string;
-  bucket: string;
-  accessKeyId: string;
-  secretAccessKey: string;
-  cdnUrl?: string;
-}
+class S3Uploader {
+  private s3Client: any;
+  private config: any;
 
-interface UploadFile {
-  filename: string;
-  buffer: Buffer;
-  mimetype: string;
-  size: number;
-}
-
-interface UploadResult {
-  name: string;
-  mimetype: string;
-  size: number;
-  url: string;
-  path: string;
-}
-
-export class S3Uploader {
-  private s3Client: S3Client;
-  private config: S3Config;
-
-  constructor(config: S3Config) {
+  constructor(config: any) {
     this.config = config;
     this.s3Client = new S3Client({
       region: config.region,
@@ -38,8 +15,8 @@ export class S3Uploader {
     });
   }
 
-  async upload(files: UploadFile[], destinationPath: string): Promise<UploadResult[]> {
-    const results: UploadResult[] = [];
+  async upload(files: any[], destinationPath: string): Promise<any[]> {
+    const results: any[] = [];
 
     for (const file of files) {
       try {
@@ -95,3 +72,5 @@ export class S3Uploader {
     return { folders: [], files: [] };
   }
 }
+
+module.exports = { S3Uploader };

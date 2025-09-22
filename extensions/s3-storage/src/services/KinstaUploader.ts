@@ -1,40 +1,19 @@
-import fs from 'fs/promises';
-import path from 'path';
-import { randomBytes } from 'crypto';
+const fs = require('fs/promises');
+const path = require('path');
+const { randomBytes } = require('crypto');
 
-interface KinstaConfig {
-  cdnUrl?: string;
-  persistentStoragePath?: string;
-  publicUrl?: string;
-}
-
-interface UploadFile {
-  filename: string;
-  buffer: Buffer;
-  mimetype: string;
-  size: number;
-}
-
-interface UploadResult {
-  name: string;
-  mimetype: string;
-  size: number;
-  url: string;
-  path: string;
-}
-
-export class KinstaUploader {
-  private config: KinstaConfig;
+class KinstaUploader {
+  private config: any;
   private storagePath: string;
 
-  constructor(config: KinstaConfig) {
+  constructor(config: any) {
     this.config = config;
     // Use persistent storage path if provided, otherwise use default media path
     this.storagePath = config.persistentStoragePath || '/app/media';
   }
 
-  async upload(files: UploadFile[], destinationPath: string): Promise<UploadResult[]> {
-    const results: UploadResult[] = [];
+  async upload(files: any[], destinationPath: string): Promise<any[]> {
+    const results: any[] = [];
 
     for (const file of files) {
       try {
@@ -132,3 +111,5 @@ export class KinstaUploader {
     }
   }
 }
+
+module.exports = { KinstaUploader };
