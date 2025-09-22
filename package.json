@@ -10,6 +10,8 @@
     "dev": "evershop dev"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.894.0",
+    "@aws-sdk/s3-request-presigner": "^3.894.0",
     "@evershop/evershop": "2.0.1",
     "dotenv": "^17.2.2"
   },

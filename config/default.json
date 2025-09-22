@@ -9,9 +9,15 @@
         "name": "sample",
         "resolve": "extensions/sample",
         "enabled": true
+      },
+      {
+        "name": "s3-storage",
+        "resolve": "extensions/s3-storage",
+        "enabled": true
       }
     ],
-    "theme": "sample"
+    "theme": "sample",
+    "file_storage": "local"
   },
   "payment": {
     "stripe": {
