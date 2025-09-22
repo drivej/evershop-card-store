@@ -8,7 +8,7 @@
       {
         "name": "sample",
         "resolve": "extensions/sample",
-        "enabled": false
+        "enabled": true
       },
       {
         "name": "kinsta-simple",
