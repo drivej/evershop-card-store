@@ -1,0 +1,45 @@
+# Node.js dependencies (will be installed in container)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment files (will be provided by deployment platform)
+.env.local
+.env.development
+
+# Git files
+.git/
+.gitignore
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+log/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# macOS-specific
+.DS_Store
+
+# Documentation
+README.md
+*.md
+
+# Only ignore root build directory, not extension/theme dist directories
+/build/
+
+# Test files
+test/
+tests/
+*.test.js
+*.spec.js
