@@ -11,7 +11,7 @@
         "enabled": true
       },
       {
-        "name": "s3-storage",
+        "name": "cdn-storage",
         "resolve": "extensions/s3-storage",
         "enabled": true
       }

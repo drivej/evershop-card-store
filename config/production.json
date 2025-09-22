@@ -21,6 +21,11 @@
       "accessKeyId": "${AWS_ACCESS_KEY_ID}",
       "secretAccessKey": "${AWS_SECRET_ACCESS_KEY}",
       "cdnUrl": "${AWS_CLOUDFRONT_URL}"
+    },
+    "kinsta": {
+      "cdnUrl": "${KINSTA_CDN_URL}",
+      "persistentStoragePath": "${KINSTA_STORAGE_PATH}",
+      "publicUrl": "${KINSTA_PUBLIC_URL}"
     }
   },
   "payment": {

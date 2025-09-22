@@ -1,9 +1,10 @@
 import { getConfig } from '@evershop/evershop/dist/lib/util/getConfig.js';
 import { addProcessor } from '@evershop/evershop/dist/lib/util/registry.js';
+import { KinstaUploader } from './services/KinstaUploader.js';
 import { S3Uploader } from './services/S3Uploader.js';
-export default (()=>{
-    // Register S3 file uploader if S3 storage is configured
-    addProcessor('fileUploader', (current)=>{
+export default () => {
+    // Register file uploader based on storage configuration
+    addProcessor('fileUploader', (current) => {
         const config = getConfig('system.file_storage');
         if (config === 's3') {
             const s3Config = getConfig('system.s3', {});
@@ -16,21 +17,37 @@ export default (()=>{
                 bucket: s3Config.bucket,
                 accessKeyId: s3Config.accessKeyId,
                 secretAccessKey: s3Config.secretAccessKey,
-                cdnUrl: s3Config.cdnUrl
+                cdnUrl: s3Config.cdnUrl,
             });
             console.log('🚀 S3 storage initialized:', {
                 region: s3Config.region,
                 bucket: s3Config.bucket,
-                cdnUrl: s3Config.cdnUrl || 'Default S3 URL'
+                cdnUrl: s3Config.cdnUrl || 'Default S3 URL',
             });
             return {
-                upload: s3Uploader.upload.bind(s3Uploader)
+                upload: s3Uploader.upload.bind(s3Uploader),
+            };
+        }
+        if (config === 'kinsta') {
+            const kinstaConfig = getConfig('system.kinsta', {});
+            const kinstaUploader = new KinstaUploader({
+                cdnUrl: kinstaConfig.cdnUrl,
+                persistentStoragePath: kinstaConfig.persistentStoragePath,
+                publicUrl: kinstaConfig.publicUrl,
+            });
+            console.log('🚀 Kinsta CDN storage initialized:', {
+                cdnUrl: kinstaConfig.cdnUrl || 'Default application URL',
+                persistentStoragePath: kinstaConfig.persistentStoragePath || '/app/media',
+                publicUrl: kinstaConfig.publicUrl || 'Application domain',
+            });
+            return {
+                upload: kinstaUploader.upload.bind(kinstaUploader),
             };
         }
         return current;
     });
-    // Register S3 file deleter
-    addProcessor('fileDeleter', (current)=>{
+    // Register file deleter based on storage configuration
+    addProcessor('fileDeleter', (current) => {
         const config = getConfig('system.file_storage');
         if (config === 's3') {
             const s3Config = getConfig('system.s3', {});
@@ -42,16 +59,27 @@ export default (()=>{
                 bucket: s3Config.bucket,
                 accessKeyId: s3Config.accessKeyId,
                 secretAccessKey: s3Config.secretAccessKey,
-                cdnUrl: s3Config.cdnUrl
+                cdnUrl: s3Config.cdnUrl,
             });
             return {
-                delete: s3Uploader.delete.bind(s3Uploader)
+                delete: s3Uploader.delete.bind(s3Uploader),
+            };
+        }
+        if (config === 'kinsta') {
+            const kinstaConfig = getConfig('system.kinsta', {});
+            const kinstaUploader = new KinstaUploader({
+                cdnUrl: kinstaConfig.cdnUrl,
+                persistentStoragePath: kinstaConfig.persistentStoragePath,
+                publicUrl: kinstaConfig.publicUrl,
+            });
+            return {
+                delete: kinstaUploader.delete.bind(kinstaUploader),
             };
         }
         return current;
     });
-    // Register S3 file browser
-    addProcessor('fileBrowser', (current)=>{
+    // Register file browser based on storage configuration
+    addProcessor('fileBrowser', (current) => {
         const config = getConfig('system.file_storage');
         if (config === 's3') {
             const s3Config = getConfig('system.s3', {});
@@ -63,12 +91,23 @@ export default (()=>{
                 bucket: s3Config.bucket,
                 accessKeyId: s3Config.accessKeyId,
                 secretAccessKey: s3Config.secretAccessKey,
-                cdnUrl: s3Config.cdnUrl
+                cdnUrl: s3Config.cdnUrl,
             });
             return {
-                list: s3Uploader.list.bind(s3Uploader)
+                list: s3Uploader.list.bind(s3Uploader),
+            };
+        }
+        if (config === 'kinsta') {
+            const kinstaConfig = getConfig('system.kinsta', {});
+            const kinstaUploader = new KinstaUploader({
+                cdnUrl: kinstaConfig.cdnUrl,
+                persistentStoragePath: kinstaConfig.persistentStoragePath,
+                publicUrl: kinstaConfig.publicUrl,
+            });
+            return {
+                list: kinstaUploader.list.bind(kinstaUploader),
             };
         }
         return current;
     });
-});
+};
