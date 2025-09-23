@@ -1,5 +1,6 @@
-const { Pool } = require('pg');
-const bcrypt = require('bcryptjs');
+import 'dotenv/config';
+import { Pool } from 'pg';
+import bcrypt from 'bcryptjs';
 
 async function createAdmin() {
   const pool = new Pool({
@@ -12,8 +13,9 @@ async function createAdmin() {
   });
 
   try {
-    // Hash the password
-    const hashedPassword = await bcrypt.hash('admin123', 10);
+    // Hash the password using EverShop's method
+    const salt = bcrypt.genSaltSync(10);
+    const hashedPassword = bcrypt.hashSync('admin123', salt);
     
     // Check if admin user already exists
     const existingUser = await pool.query(
