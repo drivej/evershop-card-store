@@ -2,6 +2,7 @@ import 'dotenv/config';
 import { Pool } from 'pg';
 import bcrypt from 'bcryptjs';
 
+// Admin creation script for remote database
 async function createAdmin() {
   const pool = new Pool({
     host: process.env.DB_HOST,
