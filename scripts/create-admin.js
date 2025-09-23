@@ -27,7 +27,7 @@ async function createAdmin() {
     if (existingUser.rows.length > 0) {
       // Update existing user
       await pool.query(
-        'UPDATE admin_user SET password = $1, full_name = $2, status = 1 WHERE email = $3',
+        'UPDATE admin_user SET password = $1, full_name = $2, status = true WHERE email = $3',
         [hashedPassword, 'Kinsta Admin', 'admin@kinsta.com']
       );
       console.log('✅ Updated existing admin user: admin@kinsta.com');
@@ -35,7 +35,7 @@ async function createAdmin() {
       // Create new admin user
       await pool.query(
         'INSERT INTO admin_user (email, password, full_name, status) VALUES ($1, $2, $3, $4)',
-        ['admin@kinsta.com', hashedPassword, 'Kinsta Admin', 1]
+        ['admin@kinsta.com', hashedPassword, 'Kinsta Admin', true]
       );
       console.log('✅ Created new admin user: admin@kinsta.com');
     }
