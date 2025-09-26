@@ -1,0 +1,8 @@
+{
+  "name": "card-shipping",
+  "version": "1.0.0",
+  "description": "Custom shipping rules for card products",
+  "main": "src/bootstrap.js",
+  "type": "commonjs",
+  "dependencies": {}
+}

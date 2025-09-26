@@ -8,7 +8,8 @@
     "start": "evershop start",
     "build": "evershop build",
     "dev": "evershop dev",
-    "create-admin": "node scripts/create-admin.js"
+    "create-admin": "node scripts/create-admin.js",
+    "setup-card-shipping": "node scripts/setup-card-shipping.js"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.894.0",
