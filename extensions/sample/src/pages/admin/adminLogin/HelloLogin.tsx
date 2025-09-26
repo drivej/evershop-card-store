@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function HelloLogin() {
   return (
-    <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 text-white shadow-lg mb-8">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 text-white shadow-lg">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-center">
           <div className="flex items-center space-x-3">
