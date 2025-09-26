@@ -51,6 +51,6 @@ export default function Hello() {
 }
 
 export const layout = {
-  areaId: 'content',
+  areaId: 'header',
   sortOrder: 0
 };
