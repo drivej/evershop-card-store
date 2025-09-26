@@ -1,4 +1,5 @@
 {
   "methods": ["GET"],
+  "path": "/shippingMethods/card-calculate/:cart_id/:method_id",
   "access": "public"
 }
