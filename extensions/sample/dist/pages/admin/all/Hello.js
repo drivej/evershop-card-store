@@ -45,6 +45,6 @@ export default function Hello() {
     }));
 }
 export const layout = {
-    areaId: 'header',
-    sortOrder: 0
+    areaId: 'content',
+    sortOrder: -10
 };
