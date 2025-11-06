@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../../styles/variables.scss';
 
 export default function EveryWhere() {
   return (

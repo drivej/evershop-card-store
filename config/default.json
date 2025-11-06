@@ -19,6 +19,21 @@
         "name": "card-shipping",
         "resolve": "extensions/card-shipping",
         "enabled": true
+      },
+      {
+        "name": "pokemon-hero",
+        "resolve": "extensions/pokemon-hero",
+        "enabled": true
+      },
+      {
+        "name": "coupon",
+        "resolve": "extensions/coupon",
+        "enabled": true
+      },
+      {
+        "name": "cardistry",
+        "resolve": "extensions/cardistry",
+        "enabled": true
       }
     ],
     "theme": "sample",
@@ -39,6 +54,25 @@
       "precision": 2,
       "round_level": "unit",
       "price_including_tax": false
+    }
+  },
+  "themeConfig": {
+    "headTags": {
+      "links": [
+        {
+          "rel": "preconnect",
+          "href": "https://fonts.googleapis.com"
+        },
+        {
+          "rel": "preconnect",
+          "href": "https://fonts.gstatic.com",
+          "crossorigin": ""
+        },
+        {
+          "rel": "stylesheet",
+          "href": "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        }
+      ]
     }
   }
 }

@@ -19,6 +19,11 @@
         "name": "card-shipping",
         "resolve": "extensions/card-shipping",
         "enabled": true
+      },
+      {
+        "name": "pokemon-hero",
+        "resolve": "extensions/pokemon-hero",
+        "enabled": true
       }
     ],
     "theme": "sample",

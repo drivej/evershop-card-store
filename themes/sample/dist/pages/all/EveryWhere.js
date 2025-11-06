@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../../styles/variables.scss';
 export default function EveryWhere() {
     return /*#__PURE__*/ React.createElement("div", {
         className: "container mx-auto px-4 py-8 bg-gray-100 rounded-lg shadow-md mt-10"

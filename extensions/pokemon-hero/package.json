@@ -1,0 +1,20 @@
+{
+  "name": "pokemon-hero",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc && copyfiles -u 1 \"src/**/*.{graphql,scss,json}\" dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "framer-motion": "^12.23.24"
+  }
+}
