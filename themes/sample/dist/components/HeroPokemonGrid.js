@@ -2,7 +2,31 @@
 import React, { useMemo, useRef, useState } from 'react';
 import { useDebounceCallback, useResizeObserver } from 'usehooks-ts';
 const pokemonCards = [
-    '/pokemon/ex-card-4.webp'
+    // '/pokemon/ex-card-4.webp',
+    {
+        img: '/pokemon/UmbreonVmaxSG.webp',
+        href: '/cards/Shiny-Umbreon'
+    },
+    {
+        img: '/pokemon/UmbreonVmaxVangogh.webp',
+        href: '/cards/Shiny-Mew'
+    },
+    {
+        img: '/pokemon/NinetalesVmaxSG.webp',
+        href: '/cards/Shiny-Ninetales'
+    },
+    {
+        img: '/pokemon/DittoVmaxSG.webp',
+        href: '/cards/Shiny-Ditto'
+    },
+    {
+        img: '/pokemon/MewVmaxSG.webp',
+        href: '/cards/Shiny-Mew'
+    },
+    {
+        img: '/pokemon/UmbreonVSG.webp',
+        href: '/cards/Umbreon'
+    }
 ];
 function rand(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -251,13 +275,7 @@ export default function HeroPokemonGrid() {
         width,
         height
     ]);
-    const fallLayout = useMemo(()=>fallCards({
-            width,
-            height
-        }, defaultCardConfig), [
-        width,
-        height
-    ]);
+    // const fallLayout = useMemo(() => fallCards({ width, height }, defaultCardConfig), [width, height]);
     const layoutModes = [
         spiralLayout,
         gridLayout,
@@ -312,8 +330,8 @@ export default function HeroPokemonGrid() {
           height: auto;
           zindex: 0;
           filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+          border-radius: 10px;
         }
-        .pokemon-card {}
         .pokemon-card:hover {
           // transform: rotate(0deg) scale(1.1) !important;
           z-index: 1000;
@@ -323,9 +341,9 @@ export default function HeroPokemonGrid() {
         className: "section-inset-shadow bg-gradient-to-b from-gray-200 to-gray-50"
     }, cards.map((card)=>/*#__PURE__*/ React.createElement("a", {
             key: card.id,
-            href: "/"
+            href: pokemonCards[card.id % pokemonCards.length].href
         }, /*#__PURE__*/ React.createElement("img", {
-            src: pokemonCards[card.id % pokemonCards.length],
+            src: pokemonCards[card.id % pokemonCards.length].img,
             alt: `Pokemon ${card.id}`,
             className: "pokemon-card",
             style: {
