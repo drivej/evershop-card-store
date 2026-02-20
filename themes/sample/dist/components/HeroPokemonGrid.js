@@ -9,7 +9,7 @@ const pokemonCards = [
     },
     {
         img: '/pokemon/UmbreonVmaxVangogh.webp',
-        href: '/cards/Shiny-Mew'
+        href: '/cards/Umbreon-Starry-Night'
     },
     {
         img: '/pokemon/NinetalesVmaxSG.webp',
@@ -28,6 +28,9 @@ const pokemonCards = [
         href: '/cards/Umbreon'
     }
 ];
+console.log({
+    pokemonCards
+});
 function rand(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
