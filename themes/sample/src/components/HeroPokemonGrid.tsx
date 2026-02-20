@@ -11,6 +11,7 @@ const pokemonCards = [
   {img:'/pokemon/MewVmaxSG.webp', href:'/cards/Shiny-Mew'},
   {img:'/pokemon/UmbreonVSG.webp', href:'/cards/Umbreon'}
 ];
+console.log({pokemonCards});
 
 function rand(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
