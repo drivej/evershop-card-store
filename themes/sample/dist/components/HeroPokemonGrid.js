@@ -367,4 +367,3 @@ export default function HeroPokemonGrid() {
         onClick: shuffleCards
     }, "Shuffle"))));
 }
-

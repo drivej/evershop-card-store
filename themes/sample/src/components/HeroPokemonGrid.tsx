@@ -5,7 +5,7 @@ import { useDebounceCallback, useResizeObserver } from 'usehooks-ts';
 const pokemonCards = [
   // '/pokemon/ex-card-4.webp',
   {img:'/pokemon/UmbreonVmaxSG.webp', href:'/cards/Shiny-Umbreon'},
-  {img:'/pokemon/UmbreonVmaxVangogh.webp', href:'/cards/Shiny-Mew'},
+  {img:'/pokemon/UmbreonVmaxVangogh.webp', href:'/cards/Umbreon-Starry-Night'},
   {img:'/pokemon/NinetalesVmaxSG.webp', href:'/cards/Shiny-Ninetales'},
   {img:'/pokemon/DittoVmaxSG.webp', href:'/cards/Shiny-Ditto'},
   {img:'/pokemon/MewVmaxSG.webp', href:'/cards/Shiny-Mew'},
