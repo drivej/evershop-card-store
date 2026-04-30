@@ -1,6 +1,6 @@
 {
   "name": "my-evershop-app",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "private": true,
   "scripts": {
@@ -13,8 +13,7 @@
     "setup-product-type": "node scripts/setup-product-type-attribute.js",
     "add-card-option": "node scripts/add-card-option.js",
     "setup-complete-shipping": "node scripts/setup-complete-shipping.js",
-    "setup-simple-shipping": "node scripts/setup-simple-shipping.js",
-    "user:create": "evershop user:create"
+    "setup-simple-shipping": "node scripts/setup-simple-shipping.js"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.894.0",
