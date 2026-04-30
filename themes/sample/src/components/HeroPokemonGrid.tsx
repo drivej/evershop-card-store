@@ -230,8 +230,8 @@ export default function HeroPokemonGrid() {
   // const fallLayout = useMemo(() => fallCards({ width, height }, defaultCardConfig), [width, height]);
 
   const layoutModes = [
-    spiralLayout,
     gridLayout,
+    spiralLayout,
     messyLayout,
     fanLayout,
     stackLayout

@@ -4,7 +4,7 @@ export default function OnlyHomePage() {
         className: "container mx-auto px-4 py-8 bg-gray-100 rounded-lg shadow-md mt-10"
     }, /*#__PURE__*/ React.createElement("h1", {
         className: "font-bold text-center mb-6"
-    }, "Home Page Only"), /*#__PURE__*/ React.createElement("p", {
+    }, "Home Page Only React Component"), /*#__PURE__*/ React.createElement("p", {
         className: " text-gray-700 text-center"
     }, "This component is only rendered on the home page."), /*#__PURE__*/ React.createElement("p", {
         className: " text-gray-700 text-center"
