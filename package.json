@@ -31,5 +31,9 @@
     "@types/react": "19.1.13",
     "execa": "9.6.0",
     "typescript": "5.9.2"
+  },
+  "overrides": {
+    "webpack": "5.84.1",
+    "webpackbar": "5.0.2"
   }
 }
