@@ -11,7 +11,7 @@ import e18123ce4cfd4d468b0453074f3f4b095 from 'file:///Users/jasoncontento/lab/m
 import ef22a08b25d070986914cf641a720c830 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/frontStore/categoryView/Sorting.js';
 import e17602fc1069e0057bfd8ebcb2c75a6bd from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/all/MiniCart.js';
 import eb52408d2e7f153ee66cbe515c679520b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/Breadcrumb.js';
-import ee4f06e0e9b0a702b40ab3d761e0305c1 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/Footer.js';
+import ebdaab0739590edc25c35f68671436ca0 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/Footer.js';
 import ea14469e70a79392d6c86c8a22e53964a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/HeadTags.js';
 import e9d94f064257cd97755d5f9920b570bfd from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/Layout.js';
 import e49357aa605ce93a8ce1206553d0a2b82 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/Logo.js';
@@ -88,10 +88,10 @@ Area.defaultProps.components = {
     }
   },
   footer: {
-    ee4f06e0e9b0a702b40ab3d761e0305c1: {
-      id: 'ee4f06e0e9b0a702b40ab3d761e0305c1',
+    ebdaab0739590edc25c35f68671436ca0: {
+      id: 'ebdaab0739590edc25c35f68671436ca0',
       sortOrder: 10,
-      component: { default: ee4f06e0e9b0a702b40ab3d761e0305c1 }
+      component: { default: ebdaab0739590edc25c35f68671436ca0 }
     }
   },
   head: {
