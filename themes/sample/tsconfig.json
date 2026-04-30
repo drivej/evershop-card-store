@@ -11,13 +11,13 @@
     "allowJs": true,
     "checkJs": false,
     "jsx": "react",
+    "rootDir": "./src",
     "outDir": "./dist",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "allowArbitraryExtensions": true,
     "strictNullChecks": true,
-    "isolatedModules": false,
-    "baseUrl": "."
+    "isolatedModules": false
   },
   "include": ["src"]
 }

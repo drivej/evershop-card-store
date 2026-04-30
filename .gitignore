@@ -12,9 +12,10 @@ yarn.lock
 .env.production
 
 # EverShop build artifacts
-build/
+# Note: .evershop/build/ is needed for production deployment
 # Note: extensions/*/dist/ directories are needed for production
-# Only ignore root dist/ directory
+# Only ignore root build/ and dist/ directories
+/build/
 /dist/
 
 # Database files
