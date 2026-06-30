@@ -1,0 +1,60 @@
+import React from 'react';
+export default function GlobalStyles() {
+    return /*#__PURE__*/ React.createElement("style", null, `
+      /* Fix font sizes after EverShop 2.1+ upgrade to Tailwind v4 */
+      /* EverShop uses prose-xl in Editor component which is 1.25rem (20px) */
+      /* This resets it to match the previous prose-base size of 1rem (16px) */
+
+      /* Override prose-xl to match prose-base sizing */
+      .prose-xl {
+        font-size: 1rem !important;
+        line-height: 1.75rem !important;
+      }
+
+      .prose-xl p {
+        font-size: 1rem !important;
+        line-height: 1.75rem !important;
+        margin-top: 1.25em !important;
+        margin-bottom: 1.25em !important;
+      }
+
+      /* Fix prose-xl headings to match prose-base */
+      .prose-xl h1 {
+        font-size: 2.25em !important;
+        margin-top: 0 !important;
+        margin-bottom: 0.8888889em !important;
+        line-height: 1.1111111 !important;
+      }
+
+      .prose-xl h2 {
+        font-size: 1.5em !important;
+        margin-top: 2em !important;
+        margin-bottom: 1em !important;
+        line-height: 1.3333333 !important;
+      }
+
+      .prose-xl h3 {
+        font-size: 1.25em !important;
+        margin-top: 1.6em !important;
+        margin-bottom: 0.6em !important;
+        line-height: 1.6 !important;
+      }
+
+      .prose-xl h4 {
+        font-size: 1em !important;
+        margin-top: 1.5em !important;
+        margin-bottom: 0.5em !important;
+        line-height: 1.5 !important;
+      }
+
+      /* Also fix prose-base to ensure consistency */
+      .prose-base {
+        font-size: 1rem !important;
+        line-height: 1.75rem !important;
+      }
+    `);
+}
+export const layout = {
+    areaId: 'head',
+    sortOrder: 5
+};

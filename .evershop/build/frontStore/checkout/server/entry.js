@@ -2,186 +2,160 @@ import React from 'react';
 import ReactDOM from 'react-dom'; 
 import { Area } from '@evershop/evershop/components/common';
 import { renderHtml } from '@evershop/evershop/components/common';
-import e9ecf5ef8543fb207f1817d4796ae1884 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/frontStore/all/SearchBox.js';
-import e17602fc1069e0057bfd8ebcb2c75a6bd from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/all/MiniCart.js';
-import e4fc9c310d1a6bff9d9460b97e3916a5f from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/checkout/Checkout.js';
-import e7cc504dcef8e240657405e23efcb2cdd from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/checkout/PaymentStep.js';
-import e327abae94395a517916a294eb3d9aa5d from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/checkout/ShipmentStep.js';
-import e97c74585ceecb98419fa44d9e7e24e0b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/checkout/ShippingMethods.js';
-import ee65205c938c602c374f586150c41e72a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/checkout/ShippingNote.js';
-import edc7a1723b97b5388125d49fc4e2f0122 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/checkout/Summary.js';
-import e7245c24cef9e6bd93f0622a416cf45e2 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/checkout/SummaryMobile.js';
-import eb52408d2e7f153ee66cbe515c679520b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/Breadcrumb.js';
-import ebdaab0739590edc25c35f68671436ca0 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/Footer.js';
-import ea14469e70a79392d6c86c8a22e53964a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/HeadTags.js';
-import e9d94f064257cd97755d5f9920b570bfd from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/Layout.js';
-import e49357aa605ce93a8ce1206553d0a2b82 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/Logo.js';
-import e80fd16c408e659500665291caff6892f from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/all/Notification.js';
-import e6b1602afeb7a972bc9d4d3ed55f7355f from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cod/pages/frontStore/checkout/CashOnDelivery.js';
-import e37d9c56ea2df2993de9c2ad6bef05044 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/customer/pages/frontStore/all/UserIcon.js';
-import edd0ce66f66e209671eed32616c963e45 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/customer/pages/frontStore/checkout/CustomerInfoStep.js';
-import e9ba351aac9216fa59d67102a72cdd39a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/paypal/pages/frontStore/checkout/Paypal.js';
-import ea6e85043f36fa3b75f075d586c84b7f6 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/stripe/pages/frontStore/checkout/Stripe.js';
-import e9b39823555905edbb6fe88ace435246c from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/sample/dist/pages/frontStore/all/FreeShippingMessage.js';
-import efd52ff9f4c5c4cf79e49322802c67825 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/EveryWhere.js';
-import collection_products from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/components/frontStore/widgets/CollectionProducts.js';
-import text_block from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/components/frontStore/widgets/TextBlock.js';
-import basic_menu from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/components/frontStore/widgets/BasicMenu.js';
+import e0b8a7fbe from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/frontStore/all/Base.js';
+import e5f0a74d0 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/frontStore/all/Breadcrumb.js';
+import e383c895b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/frontStore/all/GlobalCss.js';
+import e05859dfa from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/frontStore/all/HeadTags.js';
+import e1cb31b28 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/frontStore/all/Logo.js';
+import e25e513e8 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/frontStore/all/Notification.js';
+import e43650550 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/frontStore/all/TailwindCss.js';
+import e426029f0 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/frontStore/all/SearchBox.js';
+import e0df7cfd2 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/all/MiniCartIcon.js';
+import e31f29fcd from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/checkout/Checkout.js';
+import e01866a95 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cod/pages/frontStore/checkout/CashOnDelivery.js';
+import e2a913111 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/customer/pages/frontStore/all/CustomerIcon.js';
+import e5888fd13 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/paypal/pages/frontStore/checkout/Paypal.js';
+import e1d1a21d3 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/stripe/pages/frontStore/checkout/Stripe.js';
+import e20afd2e4 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/sample/dist/pages/frontStore/all/FreeShippingMessage.js';
+import e659c5652 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/EveryWhere.js';
+import e576ff063 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/Footer.js';
+import e569d51e7 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/GlobalStyles.js';
+import e68b9036a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/CollectionProducts.js';
+import e56a5bfd6 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/components/TextBlock.js';
+import e6e36f055 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/components/BasicMenu.js';
+import e58e4cd87 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/components/Banner.js';
+import e52783d53 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/components/Slideshow.js';
 export default renderHtml;
 Area.defaultProps.components = {
-  'icon-wrapper': {
-    e9ecf5ef8543fb207f1817d4796ae1884: {
-      id: 'e9ecf5ef8543fb207f1817d4796ae1884',
-      sortOrder: 5,
-      component: { default: e9ecf5ef8543fb207f1817d4796ae1884 }
+  body: {
+    e0b8a7fbe: {
+      id: 'e0b8a7fbe',
+      sortOrder: 1,
+      component: { default: e0b8a7fbe }
     },
-    e17602fc1069e0057bfd8ebcb2c75a6bd: {
-      id: 'e17602fc1069e0057bfd8ebcb2c75a6bd',
+    e25e513e8: {
+      id: 'e25e513e8',
       sortOrder: 10,
-      component: { default: e17602fc1069e0057bfd8ebcb2c75a6bd }
+      component: { default: e25e513e8 }
     },
-    e37d9c56ea2df2993de9c2ad6bef05044: {
-      id: 'e37d9c56ea2df2993de9c2ad6bef05044',
-      sortOrder: 30,
-      component: { default: e37d9c56ea2df2993de9c2ad6bef05044 }
+    e20afd2e4: {
+      id: 'e20afd2e4',
+      sortOrder: 0,
+      component: { default: e20afd2e4 }
     }
   },
   content: {
-    e4fc9c310d1a6bff9d9460b97e3916a5f: {
-      id: 'e4fc9c310d1a6bff9d9460b97e3916a5f',
-      sortOrder: 10,
-      component: { default: e4fc9c310d1a6bff9d9460b97e3916a5f }
-    },
-    eb52408d2e7f153ee66cbe515c679520b: {
-      id: 'eb52408d2e7f153ee66cbe515c679520b',
+    e5f0a74d0: {
+      id: 'e5f0a74d0',
       sortOrder: 0,
-      component: { default: eb52408d2e7f153ee66cbe515c679520b }
+      component: { default: e5f0a74d0 }
     },
-    efd52ff9f4c5c4cf79e49322802c67825: {
-      id: 'efd52ff9f4c5c4cf79e49322802c67825',
+    e31f29fcd: {
+      id: 'e31f29fcd',
+      sortOrder: 10,
+      component: { default: e31f29fcd }
+    },
+    e659c5652: {
+      id: 'e659c5652',
       sortOrder: 20,
-      component: { default: efd52ff9f4c5c4cf79e49322802c67825 }
-    }
-  },
-  checkoutSteps: {
-    e7cc504dcef8e240657405e23efcb2cdd: {
-      id: 'e7cc504dcef8e240657405e23efcb2cdd',
-      sortOrder: 20,
-      component: { default: e7cc504dcef8e240657405e23efcb2cdd }
-    },
-    e327abae94395a517916a294eb3d9aa5d: {
-      id: 'e327abae94395a517916a294eb3d9aa5d',
-      sortOrder: 15,
-      component: { default: e327abae94395a517916a294eb3d9aa5d }
-    },
-    edd0ce66f66e209671eed32616c963e45: {
-      id: 'edd0ce66f66e209671eed32616c963e45',
-      sortOrder: 10,
-      component: { default: edd0ce66f66e209671eed32616c963e45 }
-    }
-  },
-  checkoutShippingAddressForm: {
-    e97c74585ceecb98419fa44d9e7e24e0b: {
-      id: 'e97c74585ceecb98419fa44d9e7e24e0b',
-      sortOrder: 60,
-      component: { default: e97c74585ceecb98419fa44d9e7e24e0b }
-    }
-  },
-  checkoutSummary: {
-    ee65205c938c602c374f586150c41e72a: {
-      id: 'ee65205c938c602c374f586150c41e72a',
-      sortOrder: 50,
-      component: { default: ee65205c938c602c374f586150c41e72a }
-    }
-  },
-  checkoutPageRight: {
-    edc7a1723b97b5388125d49fc4e2f0122: {
-      id: 'edc7a1723b97b5388125d49fc4e2f0122',
-      sortOrder: 10,
-      component: { default: edc7a1723b97b5388125d49fc4e2f0122 }
-    }
-  },
-  beforePlaceOrderButton: {
-    e7245c24cef9e6bd93f0622a416cf45e2: {
-      id: 'e7245c24cef9e6bd93f0622a416cf45e2',
-      sortOrder: 10,
-      component: { default: e7245c24cef9e6bd93f0622a416cf45e2 }
-    }
-  },
-  footer: {
-    ebdaab0739590edc25c35f68671436ca0: {
-      id: 'ebdaab0739590edc25c35f68671436ca0',
-      sortOrder: 10,
-      component: { default: ebdaab0739590edc25c35f68671436ca0 }
+      component: { default: e659c5652 }
     }
   },
   head: {
-    ea14469e70a79392d6c86c8a22e53964a: {
-      id: 'ea14469e70a79392d6c86c8a22e53964a',
+    e383c895b: {
+      id: 'e383c895b',
       sortOrder: 5,
-      component: { default: ea14469e70a79392d6c86c8a22e53964a }
-    }
-  },
-  body: {
-    e9d94f064257cd97755d5f9920b570bfd: {
-      id: 'e9d94f064257cd97755d5f9920b570bfd',
+      component: { default: e383c895b }
+    },
+    e05859dfa: {
+      id: 'e05859dfa',
+      sortOrder: 5,
+      component: { default: e05859dfa }
+    },
+    e43650550: {
+      id: 'e43650550',
       sortOrder: 1,
-      component: { default: e9d94f064257cd97755d5f9920b570bfd }
+      component: { default: e43650550 }
     },
-    e80fd16c408e659500665291caff6892f: {
-      id: 'e80fd16c408e659500665291caff6892f',
+    e569d51e7: {
+      id: 'e569d51e7',
+      sortOrder: 5,
+      component: { default: e569d51e7 }
+    }
+  },
+  headerMiddleCenter: {
+    e1cb31b28: {
+      id: 'e1cb31b28',
       sortOrder: 10,
-      component: { default: e80fd16c408e659500665291caff6892f }
+      component: { default: e1cb31b28 }
+    }
+  },
+  headerMiddleRight: {
+    e426029f0: {
+      id: 'e426029f0',
+      sortOrder: 5,
+      component: { default: e426029f0 }
     },
-    e9b39823555905edbb6fe88ace435246c: {
-      id: 'e9b39823555905edbb6fe88ace435246c',
-      sortOrder: 0,
-      component: { default: e9b39823555905edbb6fe88ace435246c }
+    e0df7cfd2: {
+      id: 'e0df7cfd2',
+      sortOrder: 20,
+      component: { default: e0df7cfd2 }
+    },
+    e2a913111: {
+      id: 'e2a913111',
+      sortOrder: 10,
+      component: { default: e2a913111 }
     }
   },
-  header: {
-    e49357aa605ce93a8ce1206553d0a2b82: {
-      id: 'e49357aa605ce93a8ce1206553d0a2b82',
+  checkoutFormAfter: {
+    e01866a95: {
+      id: 'e01866a95',
       sortOrder: 10,
-      component: { default: e49357aa605ce93a8ce1206553d0a2b82 }
+      component: { default: e01866a95 }
+    },
+    e5888fd13: {
+      id: 'e5888fd13',
+      sortOrder: 10,
+      component: { default: e5888fd13 }
+    },
+    e1d1a21d3: {
+      id: 'e1d1a21d3',
+      sortOrder: 10,
+      component: { default: e1d1a21d3 }
     }
   },
-  checkoutPaymentMethodcod: {
-    e6b1602afeb7a972bc9d4d3ed55f7355f: {
-      id: 'e6b1602afeb7a972bc9d4d3ed55f7355f',
+  footer: {
+    e576ff063: {
+      id: 'e576ff063',
       sortOrder: 10,
-      component: { default: e6b1602afeb7a972bc9d4d3ed55f7355f }
-    }
-  },
-  checkoutPaymentMethodpaypal: {
-    e9ba351aac9216fa59d67102a72cdd39a: {
-      id: 'e9ba351aac9216fa59d67102a72cdd39a',
-      sortOrder: 10,
-      component: { default: e9ba351aac9216fa59d67102a72cdd39a }
-    }
-  },
-  checkoutPaymentMethodstripe: {
-    ea6e85043f36fa3b75f075d586c84b7f6: {
-      id: 'ea6e85043f36fa3b75f075d586c84b7f6',
-      sortOrder: 10,
-      component: { default: ea6e85043f36fa3b75f075d586c84b7f6 }
+      component: { default: e576ff063 }
     }
   },
   '*': {
-    collection_products: {
-      id: 'collection_products',
+    e68b9036a: {
+      id: 'e68b9036a',
       sortOrder: 0,
-      component: { default: collection_products }
+      component: { default: e68b9036a }
     },
-    text_block: {
-      id: 'text_block',
+    e56a5bfd6: {
+      id: 'e56a5bfd6',
       sortOrder: 0,
-      component: { default: text_block }
+      component: { default: e56a5bfd6 }
     },
-    basic_menu: {
-      id: 'basic_menu',
+    e6e36f055: {
+      id: 'e6e36f055',
       sortOrder: 0,
-      component: { default: basic_menu }
+      component: { default: e6e36f055 }
+    },
+    e58e4cd87: {
+      id: 'e58e4cd87',
+      sortOrder: 0,
+      component: { default: e58e4cd87 }
+    },
+    e52783d53: {
+      id: 'e52783d53',
+      sortOrder: 0,
+      component: { default: e52783d53 }
     }
   }
 } 

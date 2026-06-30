@@ -95,4 +95,3 @@ export const layout = {
     areaId: 'footer',
     sortOrder: 10
 };
-

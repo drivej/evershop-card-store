@@ -16,9 +16,10 @@
     "setup-simple-shipping": "node scripts/setup-simple-shipping.js"
   },
   "dependencies": {
+    "@apollo/client": "^4.2.3",
     "@aws-sdk/client-s3": "^3.894.0",
     "@aws-sdk/s3-request-presigner": "^3.894.0",
-    "@evershop/evershop": "2.0.1",
+    "@evershop/evershop": "^2.1.2",
     "dotenv": "^17.2.2",
     "usehooks-ts": "^3.1.1"
   },

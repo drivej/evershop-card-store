@@ -2,174 +2,212 @@ import React from 'react';
 import ReactDOM from 'react-dom'; 
 import { Area } from '@evershop/evershop/components/common';
 import { renderHtml } from '@evershop/evershop/components/common';
-import e6a723cdb49007b615ca921b88358d1fd from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/auth/pages/admin/all/AdminUser.js';
-import e9202d651418814552c97bae86df6dc5b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/admin/all/CatalogMenuGroup.js';
-import e3bec23e73ac3b12e192ad9326de51821 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/admin/all/NewProductQuickLink.js';
-import ecaf43ef9df03dd8557befff3a4512a78 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/admin/all/ShippingSettingMenu.js';
-import e08adb36e9e7a6ac5c95e89be4b81c976 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/CmsMenuGroup.js';
-import ecb243fe1c449deda7638a962fbbbcdf1 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/CopyRight.js';
-import e6c795789c3a69c5e8b2140b5b76d8ee3 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/Layout.js';
-import e7b34f21ec0f8f129e3b85f2257ad7dff from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/Logo.js';
-import e06db7484b59a0f7daba90a9fbe3a943a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/Meta.js';
-import eb01834606299fecea3af4b2d0687288d from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/Navigation.js';
-import e6a8310377b3dd3e860ecded08f6a2c17 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/Notification.js';
-import e845545e146b7bc075776a87b83b88b27 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/QuickLinks.js';
-import e0e5bfc93e951446531979129cb372d2d from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/SearchBox.js';
-import ece7702765b194d9d57d5a05634eb2dea from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/Version.js';
-import ef89557c2007bf7630b05f952fa0ca3e8 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/customer/pages/admin/all/CustomerMenuGroup.js';
-import e8036f3bbf44cfcca80826f6f535a90e1 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/oms/pages/admin/all/OmsMenuGroup.js';
-import ed17eeecc0ca17205807b461b809823d2 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/promotion/pages/admin/all/CouponMenuGroup.js';
-import e828c52bf4253e43d4455b3037eada48f from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/promotion/pages/admin/all/NewCouponQuickLink.js';
-import ee4aa72132c12ca518660b07b63e22fbf from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/setting/pages/admin/all/PaymentSettingMenu.js';
-import e57bd040215c79dfa89505b9a567ccd86 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/setting/pages/admin/all/SettingMenuGroup.js';
-import ed970bcb9b203fa65d6ebbf547761d6b7 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/setting/pages/admin/all/StoreSettingMenu.js';
-import e6a0becdf62c3dea9cf6374241043ef7a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/tax/pages/admin/all/TaxSettingMenu.js';
-import collection_products from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/components/admin/widgets/CollectionProductsSetting.js';
-import text_block from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/components/admin/widgets/TextBlockSetting.js';
-import basic_menu from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/components/admin/widgets/BasicMenuSetting.js';
+import e30aa464b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/auth/pages/admin/all/AdminUser.js';
+import e49456c19 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/admin/all/FormCss.js';
+import e6b9a27c6 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/admin/all/GlobalCss.js';
+import e626ab3be from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/admin/all/Layout.js';
+import e3a3880bd from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/admin/all/Meta.js';
+import e15d4b4fb from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/admin/all/TailwindCss.js';
+import e0f794687 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/admin/all/CatalogMenuGroup.js';
+import e33206416 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/admin/all/NewProductQuickLink.js';
+import e11f1cc90 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/admin/all/ShippingSettingMenu.js';
+import e549793a7 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/CmsMenuGroup.js';
+import e7d9a04b7 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/CopyRight.js';
+import e71f0b3bb from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/Logo.js';
+import e21dac384 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/Navigation.js';
+import e6040d805 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/Notification.js';
+import e77bfda3c from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/QuickLinks.js';
+import e3be79bdb from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/SearchBox.js';
+import e1976c5f6 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/Survey.js';
+import e15a757a6 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/Version.js';
+import e0743c9d7 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/customer/pages/admin/all/CustomerMenuGroup.js';
+import e4c259b8f from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/oms/pages/admin/all/OmsMenuGroup.js';
+import e295d3036 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/promotion/pages/admin/all/CouponMenuGroup.js';
+import e47334809 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/promotion/pages/admin/all/NewCouponQuickLink.js';
+import e0539e0b2 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/setting/pages/admin/all/PaymentSettingMenu.js';
+import e27991419 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/setting/pages/admin/all/SettingMenuGroup.js';
+import e473cc2e9 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/setting/pages/admin/all/StoreSettingMenu.js';
+import e4d0c6ece from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/tax/pages/admin/all/TaxSettingMenu.js';
+import e281f9e5a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/CollectionProductsSetting.js';
+import e5077e91a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/components/TextBlockSetting.js';
+import e15549945 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/components/BasicMenuSetting.js';
+import e5a2d2c97 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/components/BannerSetting.js';
+import e221633bd from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/components/SlideshowSetting.js';
 export default renderHtml;
 Area.defaultProps.components = {
   header: {
-    e6a723cdb49007b615ca921b88358d1fd: {
-      id: 'e6a723cdb49007b615ca921b88358d1fd',
+    e30aa464b: {
+      id: 'e30aa464b',
       sortOrder: 50,
-      component: { default: e6a723cdb49007b615ca921b88358d1fd }
+      component: { default: e30aa464b }
     },
-    e7b34f21ec0f8f129e3b85f2257ad7dff: {
-      id: 'e7b34f21ec0f8f129e3b85f2257ad7dff',
+    e71f0b3bb: {
+      id: 'e71f0b3bb',
       sortOrder: 10,
-      component: { default: e7b34f21ec0f8f129e3b85f2257ad7dff }
+      component: { default: e71f0b3bb }
     },
-    e0e5bfc93e951446531979129cb372d2d: {
-      id: 'e0e5bfc93e951446531979129cb372d2d',
+    e3be79bdb: {
+      id: 'e3be79bdb',
       sortOrder: 20,
-      component: { default: e0e5bfc93e951446531979129cb372d2d }
-    }
-  },
-  adminMenu: {
-    e9202d651418814552c97bae86df6dc5b: {
-      id: 'e9202d651418814552c97bae86df6dc5b',
-      sortOrder: 20,
-      component: { default: e9202d651418814552c97bae86df6dc5b }
-    },
-    e08adb36e9e7a6ac5c95e89be4b81c976: {
-      id: 'e08adb36e9e7a6ac5c95e89be4b81c976',
-      sortOrder: 60,
-      component: { default: e08adb36e9e7a6ac5c95e89be4b81c976 }
-    },
-    e845545e146b7bc075776a87b83b88b27: {
-      id: 'e845545e146b7bc075776a87b83b88b27',
-      sortOrder: 10,
-      component: { default: e845545e146b7bc075776a87b83b88b27 }
-    },
-    ef89557c2007bf7630b05f952fa0ca3e8: {
-      id: 'ef89557c2007bf7630b05f952fa0ca3e8',
-      sortOrder: 40,
-      component: { default: ef89557c2007bf7630b05f952fa0ca3e8 }
-    },
-    e8036f3bbf44cfcca80826f6f535a90e1: {
-      id: 'e8036f3bbf44cfcca80826f6f535a90e1',
-      sortOrder: 30,
-      component: { default: e8036f3bbf44cfcca80826f6f535a90e1 }
-    },
-    ed17eeecc0ca17205807b461b809823d2: {
-      id: 'ed17eeecc0ca17205807b461b809823d2',
-      sortOrder: 50,
-      component: { default: ed17eeecc0ca17205807b461b809823d2 }
-    },
-    e57bd040215c79dfa89505b9a567ccd86: {
-      id: 'e57bd040215c79dfa89505b9a567ccd86',
-      sortOrder: 500,
-      component: { default: e57bd040215c79dfa89505b9a567ccd86 }
-    }
-  },
-  quickLinks: {
-    e3bec23e73ac3b12e192ad9326de51821: {
-      id: 'e3bec23e73ac3b12e192ad9326de51821',
-      sortOrder: 20,
-      component: { default: e3bec23e73ac3b12e192ad9326de51821 }
-    },
-    e828c52bf4253e43d4455b3037eada48f: {
-      id: 'e828c52bf4253e43d4455b3037eada48f',
-      sortOrder: 30,
-      component: { default: e828c52bf4253e43d4455b3037eada48f }
-    }
-  },
-  settingPageMenu: {
-    ecaf43ef9df03dd8557befff3a4512a78: {
-      id: 'ecaf43ef9df03dd8557befff3a4512a78',
-      sortOrder: 15,
-      component: { default: ecaf43ef9df03dd8557befff3a4512a78 }
-    },
-    ee4aa72132c12ca518660b07b63e22fbf: {
-      id: 'ee4aa72132c12ca518660b07b63e22fbf',
-      sortOrder: 10,
-      component: { default: ee4aa72132c12ca518660b07b63e22fbf }
-    },
-    ed970bcb9b203fa65d6ebbf547761d6b7: {
-      id: 'ed970bcb9b203fa65d6ebbf547761d6b7',
-      sortOrder: 5,
-      component: { default: ed970bcb9b203fa65d6ebbf547761d6b7 }
-    },
-    e6a0becdf62c3dea9cf6374241043ef7a: {
-      id: 'e6a0becdf62c3dea9cf6374241043ef7a',
-      sortOrder: 20,
-      component: { default: e6a0becdf62c3dea9cf6374241043ef7a }
-    }
-  },
-  footerLeft: {
-    ecb243fe1c449deda7638a962fbbbcdf1: {
-      id: 'ecb243fe1c449deda7638a962fbbbcdf1',
-      sortOrder: 10,
-      component: { default: ecb243fe1c449deda7638a962fbbbcdf1 }
-    },
-    ece7702765b194d9d57d5a05634eb2dea: {
-      id: 'ece7702765b194d9d57d5a05634eb2dea',
-      sortOrder: 20,
-      component: { default: ece7702765b194d9d57d5a05634eb2dea }
-    }
-  },
-  body: {
-    e6c795789c3a69c5e8b2140b5b76d8ee3: {
-      id: 'e6c795789c3a69c5e8b2140b5b76d8ee3',
-      sortOrder: 10,
-      component: { default: e6c795789c3a69c5e8b2140b5b76d8ee3 }
-    },
-    e6a8310377b3dd3e860ecded08f6a2c17: {
-      id: 'e6a8310377b3dd3e860ecded08f6a2c17',
-      sortOrder: 10,
-      component: { default: e6a8310377b3dd3e860ecded08f6a2c17 }
+      component: { default: e3be79bdb }
     }
   },
   head: {
-    e06db7484b59a0f7daba90a9fbe3a943a: {
-      id: 'e06db7484b59a0f7daba90a9fbe3a943a',
+    e49456c19: {
+      id: 'e49456c19',
       sortOrder: 5,
-      component: { default: e06db7484b59a0f7daba90a9fbe3a943a }
+      component: { default: e49456c19 }
+    },
+    e6b9a27c6: {
+      id: 'e6b9a27c6',
+      sortOrder: 5,
+      component: { default: e6b9a27c6 }
+    },
+    e3a3880bd: {
+      id: 'e3a3880bd',
+      sortOrder: 5,
+      component: { default: e3a3880bd }
+    },
+    e15d4b4fb: {
+      id: 'e15d4b4fb',
+      sortOrder: 1,
+      component: { default: e15d4b4fb }
+    }
+  },
+  body: {
+    e626ab3be: {
+      id: 'e626ab3be',
+      sortOrder: 10,
+      component: { default: e626ab3be }
+    },
+    e6040d805: {
+      id: 'e6040d805',
+      sortOrder: 10,
+      component: { default: e6040d805 }
+    }
+  },
+  adminMenu: {
+    e0f794687: {
+      id: 'e0f794687',
+      sortOrder: 20,
+      component: { default: e0f794687 }
+    },
+    e549793a7: {
+      id: 'e549793a7',
+      sortOrder: 60,
+      component: { default: e549793a7 }
+    },
+    e77bfda3c: {
+      id: 'e77bfda3c',
+      sortOrder: 10,
+      component: { default: e77bfda3c }
+    },
+    e0743c9d7: {
+      id: 'e0743c9d7',
+      sortOrder: 40,
+      component: { default: e0743c9d7 }
+    },
+    e4c259b8f: {
+      id: 'e4c259b8f',
+      sortOrder: 30,
+      component: { default: e4c259b8f }
+    },
+    e295d3036: {
+      id: 'e295d3036',
+      sortOrder: 50,
+      component: { default: e295d3036 }
+    },
+    e27991419: {
+      id: 'e27991419',
+      sortOrder: 500,
+      component: { default: e27991419 }
+    }
+  },
+  quickLinks: {
+    e33206416: {
+      id: 'e33206416',
+      sortOrder: 20,
+      component: { default: e33206416 }
+    },
+    e47334809: {
+      id: 'e47334809',
+      sortOrder: 30,
+      component: { default: e47334809 }
+    }
+  },
+  settingPageMenu: {
+    e11f1cc90: {
+      id: 'e11f1cc90',
+      sortOrder: 15,
+      component: { default: e11f1cc90 }
+    },
+    e0539e0b2: {
+      id: 'e0539e0b2',
+      sortOrder: 10,
+      component: { default: e0539e0b2 }
+    },
+    e473cc2e9: {
+      id: 'e473cc2e9',
+      sortOrder: 5,
+      component: { default: e473cc2e9 }
+    },
+    e4d0c6ece: {
+      id: 'e4d0c6ece',
+      sortOrder: 20,
+      component: { default: e4d0c6ece }
+    }
+  },
+  footerLeft: {
+    e7d9a04b7: {
+      id: 'e7d9a04b7',
+      sortOrder: 10,
+      component: { default: e7d9a04b7 }
+    },
+    e15a757a6: {
+      id: 'e15a757a6',
+      sortOrder: 20,
+      component: { default: e15a757a6 }
     }
   },
   adminNavigation: {
-    eb01834606299fecea3af4b2d0687288d: {
-      id: 'eb01834606299fecea3af4b2d0687288d',
+    e21dac384: {
+      id: 'e21dac384',
       sortOrder: 10,
-      component: { default: eb01834606299fecea3af4b2d0687288d }
+      component: { default: e21dac384 }
+    }
+  },
+  content: {
+    e1976c5f6: {
+      id: 'e1976c5f6',
+      sortOrder: 999,
+      component: { default: e1976c5f6 }
     }
   },
   '*': {
-    collection_products: {
-      id: 'collection_products',
+    e281f9e5a: {
+      id: 'e281f9e5a',
       sortOrder: 0,
-      component: { default: collection_products }
+      component: { default: e281f9e5a }
     },
-    text_block: {
-      id: 'text_block',
+    e5077e91a: {
+      id: 'e5077e91a',
       sortOrder: 0,
-      component: { default: text_block }
+      component: { default: e5077e91a }
     },
-    basic_menu: {
-      id: 'basic_menu',
+    e15549945: {
+      id: 'e15549945',
       sortOrder: 0,
-      component: { default: basic_menu }
+      component: { default: e15549945 }
+    },
+    e5a2d2c97: {
+      id: 'e5a2d2c97',
+      sortOrder: 0,
+      component: { default: e5a2d2c97 }
+    },
+    e221633bd: {
+      id: 'e221633bd',
+      sortOrder: 0,
+      component: { default: e221633bd }
     }
   }
 } 

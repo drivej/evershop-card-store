@@ -1,36 +1,39 @@
 // HeroPokemonGrid.jsx
 import React, { useMemo, useRef, useState } from 'react';
 import { useDebounceCallback, useResizeObserver } from 'usehooks-ts';
-const pokemonCards = [
-    // '/pokemon/ex-card-4.webp',
+// Fallback cards if no products are passed
+const defaultPokemonCards = [
     {
+        name: '',
         img: '/pokemon/UmbreonVmaxSG.webp',
         href: '/cards/Shiny-Umbreon'
     },
     {
+        name: '',
         img: '/pokemon/UmbreonVmaxVangogh.webp',
         href: '/cards/Umbreon-Starry-Night'
     },
     {
+        name: '',
         img: '/pokemon/NinetalesVmaxSG.webp',
         href: '/cards/Shiny-Ninetales'
     },
     {
+        name: '',
         img: '/pokemon/DittoVmaxSG.webp',
         href: '/cards/Shiny-Ditto'
     },
     {
+        name: '',
         img: '/pokemon/MewVmaxSG.webp',
         href: '/cards/Shiny-Mew'
     },
     {
+        name: '',
         img: '/pokemon/UmbreonVSG.webp',
         href: '/cards/Umbreon'
     }
 ];
-console.log({
-    pokemonCards
-});
 function rand(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -157,37 +160,6 @@ function stackCards(rect, config) {
     }
     return cards;
 }
-function fallCards(rect, config) {
-    const cards = [];
-    const spacing = 10;
-    const _cardWidth = config.width + spacing;
-    const _cardHeight = config.height + spacing;
-    const rows = Math.floor(rect.height / _cardHeight) + 1;
-    const cols = Math.floor(rect.width / _cardWidth) + 2;
-    const totalCards = rows * cols;
-    const offset = {
-        x: config.width * -0.3,
-        y: config.height * -0.3
-    };
-    const fallDistance = rect.height * 1.5; // Cards fall 1.5x the rectangle height below
-    for(let i = 0; i < totalCards; i++){
-        const c = i % cols;
-        const r = Math.floor(i / cols);
-        const _y = offset.y + r * _cardHeight;
-        const x = offset.x + c * _cardWidth;
-        // Keep the left position, but move cards down by fallDistance
-        const y = _y + fallDistance;
-        const rotation = rand(-15, 15); // Slight random rotation as they fall
-        cards.push({
-            id: i,
-            x,
-            y,
-            rotation,
-            transitionDelay: i * 10
-        });
-    }
-    return cards;
-}
 function getOffstageAngles() {
     const angles = [];
     for(let i = 0; i < defaultCardConfig.totalCards; i++){
@@ -213,7 +185,9 @@ function offstageCards(rect, config) {
     }
     return cards;
 }
-export default function HeroPokemonGrid() {
+export default function HeroPokemonGrid({ products }) {
+    // Use provided products or fall back to default
+    const pokemonCards = products && products.length > 0 ? products : defaultPokemonCards;
     const ref = useRef(null);
     const [{ width = 0, height = 0 }, setSize] = useState({
         width: undefined,
@@ -278,7 +252,6 @@ export default function HeroPokemonGrid() {
         width,
         height
     ]);
-    // const fallLayout = useMemo(() => fallCards({ width, height }, defaultCardConfig), [width, height]);
     const layoutModes = [
         gridLayout,
         spiralLayout,
@@ -314,8 +287,6 @@ export default function HeroPokemonGrid() {
         .section-inset-shadow {
           position: relative;
           overflow: hidden;
-          // overflow-y: visible;
-          // height: 80vh;
         }
         .section-inset-shadow::after {
           content: '';
@@ -336,7 +307,6 @@ export default function HeroPokemonGrid() {
           border-radius: 10px;
         }
         .pokemon-card:hover {
-          // transform: rotate(0deg) scale(1.1) !important;
           z-index: 1000;
           filter: drop-shadow(15px 15px 12px rgba(0, 0, 0, 0.5));
         }
@@ -344,6 +314,7 @@ export default function HeroPokemonGrid() {
         className: "section-inset-shadow bg-gradient-to-b from-gray-200 to-gray-50"
     }, cards.map((card)=>/*#__PURE__*/ React.createElement("a", {
             key: card.id,
+            title: pokemonCards[card.id % pokemonCards.length].name,
             href: pokemonCards[card.id % pokemonCards.length].href
         }, /*#__PURE__*/ React.createElement("img", {
             src: pokemonCards[card.id % pokemonCards.length].img,
@@ -354,19 +325,20 @@ export default function HeroPokemonGrid() {
                 transition: `transform 0.5s ease-in-out ${card.transitionDelay ?? card.id * 3}ms`
             }
         }))), /*#__PURE__*/ React.createElement("div", {
-        className: "Xborder-r-8 Xborder-blue-500 z-50 relative backdrop-blur-xl bg-stone-800/50 text-white my-28 p-20 lg:w-[33%] inline-block lg:rounded-r-3xl mb-[20%]"
+        className: "z-50 relative backdrop-blur-xl bg-stone-800/50 text-white my-28 p-15 lg:w-[40%] inline-block lg:rounded-r-3xl mb-[20%]"
     }, /*#__PURE__*/ React.createElement("h3", {
-        className: "text-3xl font-bold mb-6"
+        className: "text-2xl font-bold mb-6"
     }, "Welcome to the shop!"), /*#__PURE__*/ React.createElement("h1", {
-        className: "text-5xl font-dmsans-400 leading-tight tracking-normal mb-6"
+        className: "text-3xl font-dmsans-400 leading-tight tracking-normal mb-6"
     }, "We specialize in artistic interpretations of your favorite characters in our exclusive stained glass style."), /*#__PURE__*/ React.createElement("div", {
         className: "border-white/30 border-b-2 my-5"
     }), /*#__PURE__*/ React.createElement("p", {
         className: "mb-10"
     }, "We're excited to share our love for Pokémon with you. Each piece is a labor of love, meticulously crafted to capture the essence of your favorite characters. Whether you're a seasoned collector or a casual fan, our collection is sure to impress."), /*#__PURE__*/ React.createElement("button", {
-        className: "text-4xl bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-7 rounded-lg shadow-lg transition duration-150 ease-in-out"
+        className: "text-3xl bg-blue-600 hover:bg-blue-500 text-white py-4 px-7 rounded-lg shadow-lg transition duration-150 ease-in-out"
     }, "Shop Now"), /*#__PURE__*/ React.createElement("button", {
-        className: "ms-3 text-4xl bg-emerald-600 hover:bg-emerald-500 text-white Xfont-bold py-4 px-7 rounded-lg shadow-lg transition duration-150 ease-in-out",
+        className: "ms-3 text-3xl bg-emerald-600 hover:bg-emerald-500 text-white py-4 px-7 rounded-lg shadow-lg transition duration-150 ease-in-out",
         onClick: shuffleCards
     }, "Shuffle"))));
 }
+
