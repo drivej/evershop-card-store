@@ -9,6 +9,7 @@
     "build": "evershop build",
     "dev": "evershop dev",
     "create-admin": "node scripts/create-admin.js",
+    "reset-admin": "node scripts/reset-admin-password.js",
     "setup-card-shipping": "node scripts/setup-card-shipping.js",
     "setup-product-type": "node scripts/setup-product-type-attribute.js",
     "add-card-option": "node scripts/add-card-option.js",
