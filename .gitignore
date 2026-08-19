@@ -13,8 +13,7 @@ yarn.lock
 .env.production
 
 # EverShop build artifacts
-# Generated during deployment by `npm run build`
-.evershop/build/
+# Keep .evershop/build tracked because the production runtime serves these files.
 # Note: extensions/*/dist/ directories are needed for production
 # Only ignore root build/ and dist/ directories
 /build/
