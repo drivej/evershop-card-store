@@ -54,6 +54,11 @@ export default function GlobalStyles() {
         font-size: 1rem !important;
         line-height: 1.75rem !important;
       }
+      /* Fix image sizing in product list */
+      .product__list__image > img {
+        object-fit: contain !important;
+        aspect-ratio: auto !important;
+      }
     `}</style>
   );
 }
