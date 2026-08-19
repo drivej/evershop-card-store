@@ -19,8 +19,8 @@ import e2983e128 from 'file:///Users/jasoncontento/lab/my-evershop-app/extension
 import e50d576c4 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/coupon/dist/pages/frontStore/homepage/Coupon.js';
 import e6384560b from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/cardistry/dist/pages/frontStore/homepage/Cardistry.js';
 import e659c5652 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/EveryWhere.js';
-import e576ff063 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/Footer.js';
 import e569d51e7 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/GlobalStyles.js';
+import e296ac657 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/MyFooter.js';
 import e28e1d967 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/homepage/Hero.js';
 import e1763f787 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/homepage/OnlyHomePage.js';
 import e68b9036a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/CollectionProducts.js';
@@ -130,10 +130,10 @@ Area.defaultProps.components = {
     }
   },
   footer: {
-    e576ff063: {
-      id: 'e576ff063',
+    e296ac657: {
+      id: 'e296ac657',
       sortOrder: 10,
-      component: { default: e576ff063 }
+      component: { default: e296ac657 }
     }
   },
   '*': {

@@ -2,6 +2,9 @@ import React from 'react';
 import pkg from '../../../../../package.json';
 
 export default function Footer() {
+
+  return <div className='p-2 bg-gray-300 text-grey-100 text-center'>{pkg.version}</div>
+  
   return (
     <div className='footer__default'>
       <div className='page-width grid grid-cols-1 md:grid-cols-2 gap-8 justify-between'>
@@ -30,13 +33,13 @@ export default function Footer() {
     </div>
   );
 
-  return (
-    <footer className='bg-gray-800 text-white py-8 mt-12'>
-      <div className='container mx-auto px-4 text-center'>
-        <div>© 2026 My Store. All rights reserved.</div>
-      </div>
-    </footer>
-  );
+  // return (
+  //   <footer className='bg-gray-800 text-white py-8 mt-12'>
+  //     <div className='container mx-auto px-4 text-center'>
+  //       <div>© 2026 My Store. All rights reserved.</div>
+  //     </div>
+  //   </footer>
+  // );
 }
 
 const VisaCard = () => {
@@ -77,6 +80,6 @@ export const PaypalCard = () => {
   );
 };
 export const layout = {
-  areaId: 'footer',
+  areaId: 'footerBottom',
   sortOrder: 10
 };

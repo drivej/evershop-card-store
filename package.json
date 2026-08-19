@@ -6,6 +6,8 @@
   "scripts": {
     "setup": "evershop install",
     "start": "evershop start",
+    "compile-theme": "swc themes/sample/src -d themes/sample/dist --config-file node_modules/@evershop/evershop/.swcrc --strip-leading-paths --copy-files",
+    "prebuild": "npm run compile-theme",
     "build": "evershop build",
     "dev": "evershop dev",
     "create-admin": "node scripts/create-admin.js",
