@@ -20,7 +20,7 @@
     "@apollo/client": "^4.2.3",
     "@aws-sdk/client-s3": "^3.894.0",
     "@aws-sdk/s3-request-presigner": "^3.894.0",
-    "@evershop/evershop": "^2.1.2",
+    "@evershop/evershop": "2.1.2",
     "dotenv": "^17.2.2",
     "usehooks-ts": "^3.1.1"
   },

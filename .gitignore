@@ -2,7 +2,8 @@
 node_modules/
 npm-debug.log
 yarn-error.log
-package-lock.json
+**/package-lock.json
+!/package-lock.json
 yarn.lock
 
 # Environment variables
@@ -12,7 +13,8 @@ yarn.lock
 .env.production
 
 # EverShop build artifacts
-# Note: .evershop/build/ is needed for production deployment
+# Generated during deployment by `npm run build`
+.evershop/build/
 # Note: extensions/*/dist/ directories are needed for production
 # Only ignore root build/ and dist/ directories
 /build/
