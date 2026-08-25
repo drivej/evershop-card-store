@@ -53,9 +53,24 @@ export default function GlobalStyles() {
         line-height: 1.75rem !important;
       }
       /* Fix image sizing in product list */
-      .product__list__image > img {
+      .product__list__image img {
         object-fit: contain !important;
         aspect-ratio: auto !important;
+        height: auto !important;
+      }
+
+      /* Allow the product image hover scale to extend beyond the card. */
+      .product__list__item {
+        position: relative;
+      }
+
+      .product__list__item:hover {
+        z-index: 10;
+      }
+
+      .product__list__item__inner,
+      .product__list__image {
+        overflow: visible !important;
       }
     `);
 }
