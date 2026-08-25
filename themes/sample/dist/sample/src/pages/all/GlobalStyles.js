@@ -53,7 +53,7 @@ export default function GlobalStyles() {
         line-height: 1.75rem !important;
       }
       /* Fix image sizing in product list */
-      .product__list__image > img {
+      .product__list__image img {
         object-fit: contain !important;
         aspect-ratio: auto !important;
       }
