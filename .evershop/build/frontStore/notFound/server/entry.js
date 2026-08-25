@@ -110,7 +110,7 @@ Area.defaultProps.components = {
       component: { default: e2a913111 }
     }
   },
-  footer: {
+  footerBottom: {
     e296ac657: {
       id: 'e296ac657',
       sortOrder: 10,
