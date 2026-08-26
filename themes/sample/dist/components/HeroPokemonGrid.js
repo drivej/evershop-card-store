@@ -160,6 +160,17 @@ function stackCards(rect, config) {
     }
     return cards;
 }
+// const shuffleArray = (cards: { index: number }[]) => {
+//   // Shuffle the deck using Fisher-Yates algorithm
+//   for (let i = cards.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     [cards[i], cards[j]] = [cards[j], cards[i]];
+//   }
+//   cards.forEach((card, i) => {
+//     card.index = i;
+//   });
+//   return cards;
+// };
 function getOffstageAngles() {
     const angles = [];
     for(let i = 0; i < defaultCardConfig.totalCards; i++){
@@ -312,19 +323,22 @@ export default function HeroPokemonGrid({ products }) {
         }
       `), /*#__PURE__*/ React.createElement("section", {
         className: "section-inset-shadow bg-gradient-to-b from-gray-200 to-gray-50"
-    }, cards.map((card)=>/*#__PURE__*/ React.createElement("a", {
+    }, cards.map((card)=>{
+        const product = pokemonCards[card.id % pokemonCards.length];
+        return /*#__PURE__*/ React.createElement("a", {
             key: card.id,
-            title: pokemonCards[card.id % pokemonCards.length].name,
-            href: pokemonCards[card.id % pokemonCards.length].href
+            title: product.name,
+            href: product.href
         }, /*#__PURE__*/ React.createElement("img", {
-            src: pokemonCards[card.id % pokemonCards.length].img,
+            src: product.img,
             alt: `Pokemon ${card.id}`,
             className: "pokemon-card",
             style: {
                 transform: `translate(${card.x}px, ${card.y}px) rotate(${card.rotation}deg)`,
                 transition: `transform 0.5s ease-in-out ${card.transitionDelay ?? card.id * 3}ms`
             }
-        }))), /*#__PURE__*/ React.createElement("div", {
+        }));
+    }), /*#__PURE__*/ React.createElement("div", {
         className: "z-50 relative backdrop-blur-xl bg-stone-800/50 text-white my-28 p-15 lg:w-[40%] inline-block lg:rounded-r-3xl mb-[20%]"
     }, /*#__PURE__*/ React.createElement("h3", {
         className: "text-2xl font-bold mb-6"
@@ -341,3 +355,4 @@ export default function HeroPokemonGrid({ products }) {
         onClick: shuffleCards
     }, "Shuffle"))));
 }
+

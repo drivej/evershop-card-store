@@ -4,12 +4,12 @@ import { useDebounceCallback, useResizeObserver } from 'usehooks-ts';
 
 // Fallback cards if no products are passed
 const defaultPokemonCards = [
-  {name:'', img:'/pokemon/UmbreonVmaxSG.webp', href:'/cards/Shiny-Umbreon'},
-  {name:'', img:'/pokemon/UmbreonVmaxVangogh.webp', href:'/cards/Umbreon-Starry-Night'},
-  {name:'', img:'/pokemon/NinetalesVmaxSG.webp', href:'/cards/Shiny-Ninetales'},
-  {name:'', img:'/pokemon/DittoVmaxSG.webp', href:'/cards/Shiny-Ditto'},
-  {name:'', img:'/pokemon/MewVmaxSG.webp', href:'/cards/Shiny-Mew'},
-  {name:'', img:'/pokemon/UmbreonVSG.webp', href:'/cards/Umbreon'}
+  { name: '', img: '/pokemon/UmbreonVmaxSG.webp', href: '/cards/Shiny-Umbreon' },
+  { name: '', img: '/pokemon/UmbreonVmaxVangogh.webp', href: '/cards/Umbreon-Starry-Night' },
+  { name: '', img: '/pokemon/NinetalesVmaxSG.webp', href: '/cards/Shiny-Ninetales' },
+  { name: '', img: '/pokemon/DittoVmaxSG.webp', href: '/cards/Shiny-Ditto' },
+  { name: '', img: '/pokemon/MewVmaxSG.webp', href: '/cards/Shiny-Mew' },
+  { name: '', img: '/pokemon/UmbreonVSG.webp', href: '/cards/Umbreon' }
 ];
 
 interface ProductCard {
@@ -154,6 +154,19 @@ function stackCards(rect: { width: number; height: number }, config: CardConfig)
   return cards;
 }
 
+// const shuffleArray = (cards: { index: number }[]) => {
+//   // Shuffle the deck using Fisher-Yates algorithm
+//   for (let i = cards.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     [cards[i], cards[j]] = [cards[j], cards[i]];
+//   }
+//   cards.forEach((card, i) => {
+//     card.index = i;
+//   });
+
+//   return cards;
+// };
+
 function getOffstageAngles() {
   const angles: number[] = [];
   for (let i = 0; i < defaultCardConfig.totalCards; i++) {
@@ -214,13 +227,7 @@ export default function HeroPokemonGrid({ products }: HeroPokemonGridProps) {
   const messyLayout = useMemo(() => messyCards({ width, height }, defaultCardConfig), [width, height]);
   const fanLayout = useMemo(() => fanCards({ width, height }, defaultCardConfig), [width, height]);
   const stackLayout = useMemo(() => stackCards({ width, height }, defaultCardConfig), [width, height]);
-  const layoutModes = [
-    gridLayout,
-    spiralLayout,
-    messyLayout,
-    fanLayout,
-    stackLayout
-  ] as const;
+  const layoutModes = [gridLayout, spiralLayout, messyLayout, fanLayout, stackLayout] as const;
   const currentLayout = layoutModes[layoutModeIndex];
 
   // Combine current layout with offstage cards for any missing cards
@@ -268,19 +275,22 @@ export default function HeroPokemonGrid({ products }: HeroPokemonGridProps) {
       `}</style>
 
       <section className='section-inset-shadow bg-gradient-to-b from-gray-200 to-gray-50'>
-        {cards.map((card) => (
-          <a key={card.id} title={pokemonCards[card.id % pokemonCards.length].name} href={pokemonCards[card.id % pokemonCards.length].href}>
-            <img
-              src={pokemonCards[card.id % pokemonCards.length].img}
-              alt={`Pokemon ${card.id}`}
-              className='pokemon-card'
-              style={{
-                transform: `translate(${card.x}px, ${card.y}px) rotate(${card.rotation}deg)`,
-                transition: `transform 0.5s ease-in-out ${card.transitionDelay ?? card.id * 3}ms`
-              }}
-            />
-          </a>
-        ))}
+        {cards.map((card) => {
+          const product = pokemonCards[card.id % pokemonCards.length];
+          return (
+            <a key={card.id} title={product.name} href={product.href}>
+              <img
+                src={product.img}
+                alt={`Pokemon ${card.id}`}
+                className='pokemon-card'
+                style={{
+                  transform: `translate(${card.x}px, ${card.y}px) rotate(${card.rotation}deg)`,
+                  transition: `transform 0.5s ease-in-out ${card.transitionDelay ?? card.id * 3}ms`
+                }}
+              />
+            </a>
+          );
+        })}
         <div className='z-50 relative backdrop-blur-xl bg-stone-800/50 text-white my-28 p-15 lg:w-[40%] inline-block lg:rounded-r-3xl mb-[20%]'>
           <h3 className='text-2xl font-bold mb-6'>Welcome to the shop!</h3>
           <h1 className='text-3xl font-dmsans-400 leading-tight tracking-normal mb-6'>We specialize in artistic interpretations of your favorite characters in our exclusive stained&nbsp;glass&nbsp;style.</h1>

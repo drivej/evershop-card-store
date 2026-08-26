@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeroPokemonGrid from '../../components/HeroPokemonGrid';
 export default function Hero({ products }) {
     // console.log(products);
@@ -6,7 +6,18 @@ export default function Hero({ products }) {
             name: product.name,
             href: product.url,
             img: product.image.url
-        })) || [];
+        })).map((e)=>{
+        console.log(e);
+        return e;
+    }) || [];
+    const productCardsAll = products?.items.map((e)=>{
+        return e;
+    }) || [];
+    useEffect(()=>{
+        console.log('productCardsAll', productCardsAll);
+    }, [
+        productCardsAll
+    ]);
     return /*#__PURE__*/ React.createElement(HeroPokemonGrid, {
         products: productCards
     });

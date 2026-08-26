@@ -30,6 +30,7 @@ import e27991419 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modu
 import e473cc2e9 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/setting/pages/admin/all/StoreSettingMenu.js';
 import e4d0c6ece from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/tax/pages/admin/all/TaxSettingMenu.js';
 import e21e83736 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/sample/dist/pages/admin/adminLogin/HelloLogin.js';
+import e38280a90 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/sample/dist/pages/admin/all/AdminImageStyles.js';
 import e281f9e5a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/CollectionProductsSetting.js';
 import e5077e91a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/components/TextBlockSetting.js';
 import e15549945 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/components/BasicMenuSetting.js';
@@ -91,6 +92,11 @@ Area.defaultProps.components = {
       id: 'e15d4b4fb',
       sortOrder: 1,
       component: { default: e15d4b4fb }
+    },
+    e38280a90: {
+      id: 'e38280a90',
+      sortOrder: 10,
+      component: { default: e38280a90 }
     }
   },
   body: {
