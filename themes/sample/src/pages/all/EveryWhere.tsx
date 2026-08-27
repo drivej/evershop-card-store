@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../styles/variables.scss';
+// import '../../../styles/variables.scss';
 
 export default function EveryWhere() {
   return (
@@ -19,7 +19,7 @@ export default function EveryWhere() {
   );
 }
 
-export const layout = {
+export const Xlayout = {
   areaId: 'content',
   sortOrder: 20
 };

@@ -10,7 +10,7 @@ export default function Cardistry() {
         className: "text-lg mt-4"
     }, "This text uses the default font."));
 }
-export const layout = {
+export const Xlayout = {
     areaId: 'content',
     sortOrder: 31
 };

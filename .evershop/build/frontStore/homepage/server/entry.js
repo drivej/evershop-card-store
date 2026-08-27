@@ -13,14 +13,9 @@ import e426029f0 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modu
 import e0df7cfd2 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/all/MiniCartIcon.js';
 import e2a913111 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/customer/pages/frontStore/all/CustomerIcon.js';
 import e20afd2e4 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/sample/dist/pages/frontStore/all/FreeShippingMessage.js';
-import e2983e128 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/sample/dist/pages/frontStore/homepage/FooList.js';
-import e50d576c4 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/coupon/dist/pages/frontStore/homepage/Coupon.js';
-import e6384560b from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/cardistry/dist/pages/frontStore/homepage/Cardistry.js';
-import e659c5652 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/EveryWhere.js';
 import e569d51e7 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/GlobalStyles.js';
 import e296ac657 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/MyFooter.js';
 import e28e1d967 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/homepage/Hero.js';
-import e1763f787 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/homepage/OnlyHomePage.js';
 import e68b9036a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/CollectionProducts.js';
 import e56a5bfd6 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/components/TextBlock.js';
 import e6e36f055 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/components/BasicMenu.js';
@@ -51,35 +46,10 @@ Area.defaultProps.components = {
       sortOrder: 0,
       component: { default: e5f0a74d0 }
     },
-    e2983e128: {
-      id: 'e2983e128',
-      sortOrder: 30,
-      component: { default: e2983e128 }
-    },
-    e50d576c4: {
-      id: 'e50d576c4',
-      sortOrder: 30,
-      component: { default: e50d576c4 }
-    },
-    e6384560b: {
-      id: 'e6384560b',
-      sortOrder: 31,
-      component: { default: e6384560b }
-    },
-    e659c5652: {
-      id: 'e659c5652',
-      sortOrder: 20,
-      component: { default: e659c5652 }
-    },
     e28e1d967: {
       id: 'e28e1d967',
       sortOrder: 10,
       component: { default: e28e1d967 }
-    },
-    e1763f787: {
-      id: 'e1763f787',
-      sortOrder: 10,
-      component: { default: e1763f787 }
     }
   },
   head: {

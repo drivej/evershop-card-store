@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../styles/variables.scss';
+// import '../../../styles/variables.scss';
 export default function EveryWhere() {
     return /*#__PURE__*/ React.createElement("div", {
         className: "container mx-auto px-4 py-8 bg-gray-100 rounded-lg shadow-md mt-10"
@@ -13,7 +13,7 @@ export default function EveryWhere() {
         className: " text-gray-700 text-center"
     }, "You can also remove this by disabling the theme `sample`."));
 }
-export const layout = {
+export const Xlayout = {
     areaId: 'content',
     sortOrder: 20
 };

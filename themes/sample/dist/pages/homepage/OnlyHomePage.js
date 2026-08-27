@@ -11,8 +11,7 @@ export default function OnlyHomePage() {
     }, "You can modify this component at", ' ', /*#__PURE__*/ React.createElement("code", null, "`themes/sample/src/pages/homepage/OnlyHomePage.tsx`")), /*#__PURE__*/ React.createElement("p", {
         className: " text-gray-700 text-center"
     }, "You can also remove this by disabling the theme `sample`."));
-}
-export const layout = {
-    areaId: 'content',
-    sortOrder: 10
-};
+} // export const layout = {
+ //   areaId: 'content',
+ //   sortOrder: 10
+ // };

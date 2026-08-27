@@ -8,7 +8,7 @@ export default function Coupon(): React.ReactElement {
   );
 }
 
-export const layout = {
+export const Xlayout = {
   areaId: 'content',
   sortOrder: 30
 };

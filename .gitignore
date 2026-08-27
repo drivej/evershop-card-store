@@ -46,4 +46,5 @@ log/
 
 # Kinsta-specific (if applicable)
 kinsta/extensions/s3-storage/
-card_template.psd
+# Large design source files are not deployment assets and exceed GitHub limits.
+*.psd

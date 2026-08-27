@@ -31,7 +31,7 @@ export default function FooList({ foos }: FooListProps) {
   );
 }
 
-export const layout = {
+export const Xlayout = {
   areaId: 'content',
   sortOrder: 30
 };

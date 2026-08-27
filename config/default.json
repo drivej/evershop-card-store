@@ -57,6 +57,12 @@
     }
   },
   "themeConfig": {
+    "logo": {
+      "src": "/images/RCH_badge_big.png",
+      "alt": "Rare Card Hunterz",
+      "width": 70,
+      "height": 70
+    },
     "headTags": {
       "links": [
         {

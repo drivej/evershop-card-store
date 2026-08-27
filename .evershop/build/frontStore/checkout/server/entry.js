@@ -17,7 +17,6 @@ import e2a913111 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modu
 import e5888fd13 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/paypal/pages/frontStore/checkout/Paypal.js';
 import e1d1a21d3 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/stripe/pages/frontStore/checkout/Stripe.js';
 import e20afd2e4 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/sample/dist/pages/frontStore/all/FreeShippingMessage.js';
-import e659c5652 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/EveryWhere.js';
 import e569d51e7 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/GlobalStyles.js';
 import e296ac657 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/MyFooter.js';
 import e68b9036a from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/CollectionProducts.js';
@@ -54,11 +53,6 @@ Area.defaultProps.components = {
       id: 'e31f29fcd',
       sortOrder: 10,
       component: { default: e31f29fcd }
-    },
-    e659c5652: {
-      id: 'e659c5652',
-      sortOrder: 20,
-      component: { default: e659c5652 }
     }
   },
   head: {

@@ -15,11 +15,11 @@ export default function FooList({ foos }) {
             className: "text-gray-600 leading-relaxed"
         }, foo.description)))));
 }
-export const layout = {
+export const Xlayout = {
     areaId: 'content',
     sortOrder: 30
 };
-export const query = `
+export const Xquery = `
   query Query {
     foos {
       id

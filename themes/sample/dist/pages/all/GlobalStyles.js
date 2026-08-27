@@ -1,6 +1,11 @@
 import React from 'react';
 export default function GlobalStyles() {
     return /*#__PURE__*/ React.createElement("style", null, `
+      body {
+        background-image: url('/images/RCH_bg_blue.png');
+        background-repeat: repeat;
+      }
+
       /* Fix font sizes after EverShop 2.1+ upgrade to Tailwind v4 */
       /* EverShop uses prose-xl in Editor component which is 1.25rem (20px) */
       /* This resets it to match the previous prose-base size of 1rem (16px) */
@@ -58,6 +63,15 @@ export default function GlobalStyles() {
         aspect-ratio: auto !important;
         height: auto !important;
       }
+      .product-media-container .main-image-container .product-image {
+        background-color: transparent !important;
+      }
+      .product-media-container .slick-dots.slick-thumb li .thumbnail-wrapper {
+        background: transparent !important;
+      }
+      .product-media-container .custom-arrow svg {
+        color: #000000 !important;
+      }
 
       /* Allow the product image hover scale to extend beyond the card. */
       .product__list__item {
@@ -78,3 +92,4 @@ export const layout = {
     areaId: 'head',
     sortOrder: 5
 };
+

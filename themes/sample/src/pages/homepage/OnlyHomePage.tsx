@@ -18,7 +18,7 @@ export default function OnlyHomePage() {
   );
 }
 
-export const layout = {
-  areaId: 'content',
-  sortOrder: 10
-};
+// export const layout = {
+//   areaId: 'content',
+//   sortOrder: 10
+// };
