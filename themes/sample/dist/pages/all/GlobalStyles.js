@@ -2,7 +2,7 @@ import React from 'react';
 export default function GlobalStyles() {
     return /*#__PURE__*/ React.createElement("style", null, `
       body {
-        background-image: url('/images/RCH_bg_blue.png');
+        background-image: url(/images/RCH_bg_blue.png);
         background-repeat: repeat;
       }
 
@@ -92,4 +92,3 @@ export const layout = {
     areaId: 'head',
     sortOrder: 5
 };
-

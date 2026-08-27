@@ -4,7 +4,7 @@ export default function GlobalStyles() {
   return (
     <style>{`
       body {
-        background-image: url('/images/RCH_bg_blue.png');
+        background-image: url(/images/RCH_bg_blue.png);
         background-repeat: repeat;
       }
 
