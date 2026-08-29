@@ -108148,57 +108148,6 @@ query Query {
     }
 }`));
 //# sourceMappingURL=ProductView.js.map
-;// CONCATENATED MODULE: ./themes/sample/dist/pages/productView/CardsCategoryContent.js
-
-const CATEGORY_URL_KEY = 'cards';
-function CardsCategoryContent({ product }) {
-    const category = product?.category;
-    const categoryPath = category?.path ?? [];
-    const belongsToCardsCategory = category?.urlKey === CATEGORY_URL_KEY || categoryPath.some(({ urlKey })=>urlKey === CATEGORY_URL_KEY);
-    if (!belongsToCardsCategory) {
-        return null;
-    }
-    return /*#__PURE__*/ node_modules_react.createElement("section", {
-        className: "mt-12 rounded-lg border border-border bg-background/90 p-6 shadow-sm md:p-8",
-        "aria-labelledby": "cards-category-content-heading"
-    }, /*#__PURE__*/ node_modules_react.createElement("h2", {
-        id: "cards-category-content-heading",
-        className: "mb-4 text-2xl font-semibold"
-    }, "Find us on Instagram:"), /*#__PURE__*/ node_modules_react.createElement("ul", {
-        className: "mb-6 space-y-2"
-    }, /*#__PURE__*/ node_modules_react.createElement("li", null, /*#__PURE__*/ node_modules_react.createElement("a", {
-        href: "https://www.instagram.com/stainedglasspokemon",
-        target: "_blank",
-        rel: "noopener noreferrer",
-        className: "font-semibold underline underline-offset-4"
-    }, "@stainedglasspokemon"), ' ', "— For customs only"), /*#__PURE__*/ node_modules_react.createElement("li", null, /*#__PURE__*/ node_modules_react.createElement("a", {
-        href: "https://www.instagram.com/rarecardhunterz",
-        target: "_blank",
-        rel: "noopener noreferrer",
-        className: "font-semibold underline underline-offset-4"
-    }, "@rarecardhunterz"), ' ', "— For all TCGs including customs")), /*#__PURE__*/ node_modules_react.createElement("p", {
-        className: "mb-6 leading-7"
-    }, "Our cards are printed on a Heidelberg Versafire LV printer with holographic texture and high-density cardstock that feels like any other TCG card yet more durable."), /*#__PURE__*/ node_modules_react.createElement("p", {
-        className: "font-semibold"
-    }, "Official Card Store of RareCardHunterz"));
-}
-const CardsCategoryContent_layout = {
-    areaId: 'productPageBottom',
-    sortOrder: 10
-};
-const CardsCategoryContent_query = (/* unused pure expression or super */ null && (`
-  query Query {
-    product: currentProduct {
-      category {
-        urlKey
-        path {
-          urlKey
-        }
-      }
-    }
-  }
-`));
-
 ;// CONCATENATED MODULE: ./node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/cmsPageView/CmsPageView.js
 
 
@@ -108221,7 +108170,6 @@ const CmsPageView_query = (/* unused pure expression or super */ null && (`
 `));
 //# sourceMappingURL=CmsPageView.js.map
 ;// CONCATENATED MODULE: ./.evershop/build/frontStore/server/entry.js
-
 
 
 
@@ -114453,13 +114401,6 @@ setAreaComponents('productView', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: Logo }
-    }
-  },
-  productPageBottom: {
-    e7f5c7a87: {
-      id: 'e7f5c7a87',
-      sortOrder: 10,
-      component: { default: CardsCategoryContent }
     }
   },
   '*': {

@@ -72,7 +72,6 @@ import e186a0d6f from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modu
 import e65124cad from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/blog/pages/frontStore/blogTagView/BlogTagView.js';
 import e1b09e3ea from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/frontStore/categoryView/CategoryView.js';
 import e15f778b4 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/frontStore/productView/ProductView.js';
-import e7f5c7a87 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/productView/CardsCategoryContent.js';
 import e7a0c2356 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/cmsPageView/CmsPageView.js';
 export default renderHtml;
 setAreaComponents('blogRss', {
@@ -6230,13 +6229,6 @@ setAreaComponents('productView', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
-    }
-  },
-  productPageBottom: {
-    e7f5c7a87: {
-      id: 'e7f5c7a87',
-      sortOrder: 10,
-      component: { default: e7f5c7a87 }
     }
   },
   '*': {

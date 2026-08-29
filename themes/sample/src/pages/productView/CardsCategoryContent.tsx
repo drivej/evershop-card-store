@@ -76,12 +76,12 @@ export default function CardsCategoryContent({
   );
 }
 
-export const layout = {
+export const Xlayout = {
   areaId: 'productPageBottom',
   sortOrder: 10
 };
 
-export const query = `
+export const Xquery = `
   query Query {
     product: currentProduct {
       category {

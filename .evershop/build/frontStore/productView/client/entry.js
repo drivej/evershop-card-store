@@ -20,7 +20,6 @@ import e2a913111 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modu
 import e20afd2e4 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/sample/dist/pages/frontStore/all/FreeShippingMessage.js';
 import e7d267be4 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/InstagramLink.js';
 import e296ac657 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/MyFooter.js';
-import e7f5c7a87 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/productView/CardsCategoryContent.js';
 import e1ec9751b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/blog/components/frontStore/FeaturedBlogs.js';
 import e1227c06d from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/RelatedProducts.js';
 import e73ee597b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/FrequentlyBoughtTogether.js';
@@ -136,13 +135,6 @@ setAreaComponents('productView', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
-    }
-  },
-  productPageBottom: {
-    e7f5c7a87: {
-      id: 'e7f5c7a87',
-      sortOrder: 10,
-      component: { default: e7f5c7a87 }
     }
   },
   '*': {
