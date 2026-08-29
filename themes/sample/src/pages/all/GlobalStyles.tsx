@@ -6,6 +6,7 @@ export default function GlobalStyles() {
       body {
         background-image: url(/images/RCH_bg_bluelight.png);
         background-repeat: repeat;
+        background-attachment: fixed;
       }
 
       /* Fix font sizes after EverShop 2.1+ upgrade to Tailwind v4 */
