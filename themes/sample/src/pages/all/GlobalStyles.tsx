@@ -93,6 +93,13 @@ export default function GlobalStyles() {
       .product__detail__right input[type='number'] {
         background: #ffffff;
       }
+
+      @media screen and (max-width: 767px) {
+        .product__detail .evershop-recommendation-shelf .product__grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+      }
+
     `}</style>
   );
 }
