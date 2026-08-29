@@ -37,7 +37,8 @@
       }
     ],
     "theme": "sample",
-    "file_storage": "local"
+    "file_storage": "local",
+    "remote_media_base_url": "https://rarecardhunterz.com"
   },
   "payment": {
     "stripe": {

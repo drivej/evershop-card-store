@@ -25,7 +25,7 @@ export default function Footer() {
         <div className='self-center'>
           <div className='copyright text-center md:text-right text-textSubdued'>
             <span>
-              © {new Date().getFullYear()} Evershop. All Rights Reserved. v{pkg.version}
+              © {new Date().getFullYear()} XXEvershop. All Rights Reserved. v{pkg.version}
             </span>
           </div>
         </div>
@@ -79,7 +79,12 @@ export const PaypalCard = () => {
     </svg>
   );
 };
+// export const layout = {
+//   areaId: 'footerBottom',
+//   sortOrder: 10
+// };
+
 export const layout = {
-  areaId: 'footerBottom',
-  sortOrder: 10
+  areaId: "body", // Places it in the global layout body
+  sortOrder: 100, // Higher numbers render lower down the page
 };

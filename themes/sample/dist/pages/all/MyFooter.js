@@ -14,7 +14,7 @@ export default function Footer() {
         className: "self-center"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "copyright text-center md:text-right text-textSubdued"
-    }, /*#__PURE__*/ React.createElement("span", null, "© ", new Date().getFullYear(), " Evershop. All Rights Reserved. v", pkg.version)))));
+    }, /*#__PURE__*/ React.createElement("span", null, "© ", new Date().getFullYear(), " XXEvershop. All Rights Reserved. v", pkg.version)))));
 // return (
 //   <footer className='bg-gray-800 text-white py-8 mt-12'>
 //     <div className='container mx-auto px-4 text-center'>
@@ -96,7 +96,11 @@ export const PaypalCard = ()=>{
         d: "M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"
     }));
 };
+// export const layout = {
+//   areaId: 'footerBottom',
+//   sortOrder: 10
+// };
 export const layout = {
-    areaId: 'footerBottom',
-    sortOrder: 10
+    areaId: "body",
+    sortOrder: 100
 };

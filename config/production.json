@@ -14,7 +14,7 @@
       {
         "name": "kinsta-simple",
         "resolve": "extensions/kinsta-simple",
-        "enabled": false
+        "enabled": true
       },
       {
         "name": "card-shipping",

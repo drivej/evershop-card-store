@@ -244,8 +244,17 @@ export default function HeroPokemonGrid({ products }: HeroPokemonGridProps) {
   }, [currentLayout, offstageLayout]);
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className='hero-full-bleed'>
       <style>{`
+        .hero-full-bleed {
+          position: relative;
+          left: 50%;
+          width: 100vw;
+          max-width: 100vw;
+          height: 100vh;
+          transform: translateX(-50%);
+          overflow: clip;
+        }
         .section-inset-shadow {
           position: relative;
           overflow: hidden;
@@ -291,13 +300,13 @@ export default function HeroPokemonGrid({ products }: HeroPokemonGridProps) {
             </a>
           );
         })}
-        <div className='z-50 relative backdrop-blur-xl bg-stone-800/50 text-white my-28 p-15 lg:w-[40%] inline-block lg:rounded-r-3xl mb-[20%]'>
-          <h3 className='text-2xl font-bold mb-6'>Welcome to the shop!</h3>
-          <h1 className='text-3xl font-dmsans-400 leading-tight tracking-normal mb-6'>We specialize in artistic interpretations of your favorite characters in our exclusive stained&nbsp;glass&nbsp;style.</h1>
-          <div className='border-white/30 border-b-2 my-5'></div>
-          <p className='mb-10'>We're excited to share our love for Pokémon with you. Each piece is a labor of love, meticulously crafted to capture the essence of your favorite characters. Whether you're a seasoned collector or a casual fan, our collection is sure to impress.</p>
-          <button className='text-3xl bg-blue-600 hover:bg-blue-500 text-white py-4 px-7 rounded-lg shadow-lg transition duration-150 ease-in-out'>Shop Now</button>
-          <button className='ms-3 text-3xl bg-emerald-600 hover:bg-emerald-500 text-white py-4 px-7 rounded-lg shadow-lg transition duration-150 ease-in-out' onClick={shuffleCards}>
+        <div className='z-50 relative backdrop-blur-xl bg-stone-800/50 text-white my-28 p-12 lg:w-[40%] inline-block lg:rounded-r-3xl mb-[20%]'>
+          {/* <h3 className='text-2xl font-bold mb-6'>Welcome to the shop!</h3> */}
+          <h2 className='m-2 text-3xl text-white font-dmsans-400 leading-tight tracking-normal mb-6'>We specialize in artistic interpretations of your favorite characters in our exclusive stained&nbsp;glass&nbsp;style.</h2>
+          {/* <div className='border-white/30 border-b-2 my-5'></div> */}
+          {/* <p className='mb-10'>We're excited to share our love for Pokémon with you. Each piece is a labor of love, meticulously crafted to capture the essence of your favorite characters. Whether you're a seasoned collector or a casual fan, our collection is sure to impress.</p> */}
+          <button className='text-3xl bg-blue-600 hover:bg-blue-500 text-white py-4 px-7 m-2 rounded-lg shadow-lg transition duration-150 ease-in-out'>Shop Now</button>
+          <button className='m-2 text-3xl bg-emerald-600 hover:bg-emerald-500 text-white py-4 px-7 rounded-lg shadow-lg transition duration-150 ease-in-out' onClick={shuffleCards}>
             Shuffle
           </button>
         </div>

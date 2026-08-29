@@ -1,0 +1,11 @@
+{
+  "fingerprint": "locales:en|default:en|blog-categories:0::|blog-posts:0::|blog-tags:0::|categories:1:2025-09-26T13:59:30.575Z:cb94df741f3416a1319ca764daaee80a|cms-pages:0::|landing-pages:0::|products:10:2026-02-10T01:22:41.859Z:82de14eab4f0b50b076d417aea5b29cc|static:1::6666cd76f96956469e7be39d750cc7d9",
+  "generatedAt": "2026-08-29T11:30:03.557Z",
+  "files": [
+    "sitemap.xml",
+    "sitemap-products.xml",
+    "sitemap-categories.xml",
+    "sitemap-static.xml"
+  ],
+  "urlCount": 12
+}

@@ -2,7 +2,7 @@ import React from 'react';
 export default function GlobalStyles() {
     return /*#__PURE__*/ React.createElement("style", null, `
       body {
-        background-image: url(/images/RCH_bg_blue.png);
+        background-image: url(/images/RCH_bg_bluelight.png);
         background-repeat: repeat;
       }
 
@@ -86,10 +86,9 @@ export default function GlobalStyles() {
       .product__list__image {
         overflow: visible !important;
       }
+
+      .product__detail__right input[type='number'] {
+        background: #ffffff;
+      }
     `);
 }
-export const layout = {
-    areaId: 'head',
-    sortOrder: 5
-};
-

@@ -4,6 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "swc src -d dist --config-file ../../node_modules/@evershop/evershop/.swcrc --strip-leading-paths --copy-files",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc"
   },

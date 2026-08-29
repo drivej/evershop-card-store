@@ -2,5 +2,8 @@
   "name": "kinsta-simple-storage",
   "version": "1.0.0",
   "description": "Simple Kinsta storage for EverShop (CommonJS compatible)",
-  "main": "src/bootstrap.js"
+  "main": "src/bootstrap.js",
+  "scripts": {
+    "build": "swc src -d dist --config-file ../../node_modules/@evershop/evershop/.swcrc --strip-leading-paths --copy-files"
+  }
 }
