@@ -108049,7 +108049,7 @@ const ProductSingleName = () => {
         node_modules_react.createElement(common_Area, { id: "productNameAfter", noOuter: true })));
 };
 //# sourceMappingURL=ProductSingleName.js.map
-;// CONCATENATED MODULE: ./node_modules/@evershop/evershop/dist/modules/catalog/pages/frontStore/productView/ProductView.js
+;// CONCATENATED MODULE: ./themes/sample/dist/pages/productView/ProductView.js
 
 
 
@@ -108057,46 +108057,87 @@ const ProductSingleName = () => {
 
 
 
-function ProductView({ product }) {
-    return (node_modules_react.createElement(ProductProvider, { product: product },
-        node_modules_react.createElement("div", { className: "product__detail" },
-            node_modules_react.createElement(common_Area, { id: "productPageTop", className: "product__page__top" }),
-            node_modules_react.createElement("div", { className: "product__page__middle" },
-                node_modules_react.createElement("div", { className: "grid grid-cols-1 gap-7 md:grid-cols-2" },
-                    node_modules_react.createElement(common_Area, { id: "productPageMiddleLeft", className: "product__detail__left", coreComponents: [
-                            {
-                                component: { default: node_modules_react.createElement(Media, null) },
-                                sortOrder: 0,
-                                id: 'media'
-                            }
-                        ] }),
-                    node_modules_react.createElement(common_Area, { id: "productPageMiddleRight", className: "product__detail__right", coreComponents: [
-                            {
-                                component: { default: node_modules_react.createElement(ProductSingleName, null) },
-                                sortOrder: 10,
-                                id: 'name'
-                            },
-                            {
-                                component: { default: node_modules_react.createElement(ProductSingleForm, null) },
-                                sortOrder: 30,
-                                id: 'productForm'
-                            }
-                        ] })),
-                node_modules_react.createElement(common_Area, { id: "productSingleDescription", coreComponents: [
-                        {
-                            component: { default: node_modules_react.createElement(ProductSingleDescription, null) },
-                            sortOrder: 10,
-                            id: 'productSingleDescription'
-                        }
-                    ] })),
-            node_modules_react.createElement(common_Area, { id: "productPageBottom", className: "product__page__bottom" }))));
+const CARDS_CATEGORY_URL_KEY = 'cards';
+/**
+ * Theme override for EverShop's productView layout.
+ *
+ * Card products render their description in the right column at sort order
+ * 100, after ProductSingleForm (sort order 30), so it appears below Add to
+ * Cart. Other products retain EverShop's standard full-width description.
+ */ function ProductView({ product }) {
+    const category = product.category;
+    const isCardsProduct = category?.urlKey === CARDS_CATEGORY_URL_KEY || category?.path?.some(({ urlKey })=>urlKey === CARDS_CATEGORY_URL_KEY) === true;
+    const description = {
+        component: {
+            default: /*#__PURE__*/ node_modules_react.createElement(ProductSingleDescription, null)
+        },
+        sortOrder: 100,
+        id: 'productSingleDescription'
+    };
+    return /*#__PURE__*/ node_modules_react.createElement(ProductProvider, {
+        product: product
+    }, /*#__PURE__*/ node_modules_react.createElement("div", {
+        className: "product__detail"
+    }, /*#__PURE__*/ node_modules_react.createElement(common_Area, {
+        id: "productPageTop",
+        className: "product__page__top"
+    }), /*#__PURE__*/ node_modules_react.createElement("div", {
+        className: "product__page__middle"
+    }, /*#__PURE__*/ node_modules_react.createElement("div", {
+        className: "grid grid-cols-1 gap-7 md:grid-cols-2"
+    }, /*#__PURE__*/ node_modules_react.createElement(common_Area, {
+        id: "productPageMiddleLeft",
+        className: "product__detail__left",
+        coreComponents: [
+            {
+                component: {
+                    default: /*#__PURE__*/ node_modules_react.createElement(Media, null)
+                },
+                sortOrder: 0,
+                id: 'media'
+            }
+        ]
+    }), /*#__PURE__*/ node_modules_react.createElement(common_Area, {
+        id: "productPageMiddleRight",
+        className: "product__detail__right",
+        coreComponents: [
+            {
+                component: {
+                    default: /*#__PURE__*/ node_modules_react.createElement(ProductSingleName, null)
+                },
+                sortOrder: 10,
+                id: 'name'
+            },
+            {
+                component: {
+                    default: /*#__PURE__*/ node_modules_react.createElement(ProductSingleForm, null)
+                },
+                sortOrder: 30,
+                id: 'productForm'
+            },
+            ...isCardsProduct ? [
+                description
+            ] : []
+        ]
+    })), !isCardsProduct && /*#__PURE__*/ node_modules_react.createElement(common_Area, {
+        id: "productSingleDescription",
+        coreComponents: [
+            {
+                ...description,
+                sortOrder: 10
+            }
+        ]
+    })), /*#__PURE__*/ node_modules_react.createElement(common_Area, {
+        id: "productPageBottom",
+        className: "product__page__bottom"
+    })));
 }
 const ProductView_layout = {
     areaId: 'content',
     sortOrder: 10
 };
 const ProductView_query = (/* unused pure expression or super */ null && (`
-query Query {
+  query Query {
     product: currentProduct {
       uuid
       metafields {
@@ -108108,6 +108149,12 @@ query Query {
       name
       description
       sku
+      category {
+        urlKey
+        path {
+          urlKey
+        }
+      }
       price {
         regular {
           value
@@ -108153,8 +108200,9 @@ query Query {
         }
       }
     }
-}`));
-//# sourceMappingURL=ProductView.js.map
+  }
+`));
+
 ;// CONCATENATED MODULE: ./node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/cmsPageView/CmsPageView.js
 
 
@@ -114353,8 +114401,8 @@ setAreaComponents('productView', {
       sortOrder: 0,
       component: { default: all_Breadcrumb }
     },
-    e15f778b4: {
-      id: 'e15f778b4',
+    e411eb237: {
+      id: 'e411eb237',
       sortOrder: 10,
       component: { default: ProductView }
     }

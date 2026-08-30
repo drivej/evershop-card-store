@@ -14,7 +14,7 @@ import e25537413 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sa
 import e25e513e8 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/frontStore/all/Notification.js';
 import e43650550 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/base/pages/frontStore/all/TailwindCss.js';
 import e426029f0 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/frontStore/all/SearchBox.js';
-import e15f778b4 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/frontStore/productView/ProductView.js';
+import e411eb237 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/productView/ProductView.js';
 import e0df7cfd2 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/all/MiniCartIcon.js';
 import e2a913111 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/customer/pages/frontStore/all/CustomerIcon.js';
 import e20afd2e4 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/sample/dist/pages/frontStore/all/FreeShippingMessage.js';
@@ -80,10 +80,10 @@ setAreaComponents('productView', {
       sortOrder: 0,
       component: { default: e5f0a74d0 }
     },
-    e15f778b4: {
-      id: 'e15f778b4',
+    e411eb237: {
+      id: 'e411eb237',
       sortOrder: 10,
-      component: { default: e15f778b4 }
+      component: { default: e411eb237 }
     }
   },
   head: {

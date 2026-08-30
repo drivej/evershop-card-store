@@ -71,7 +71,7 @@ import e140fc551 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modu
 import e186a0d6f from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/blog/pages/frontStore/blogPostView/BlogPostView.js';
 import e65124cad from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/blog/pages/frontStore/blogTagView/BlogTagView.js';
 import e1b09e3ea from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/frontStore/categoryView/CategoryView.js';
-import e15f778b4 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/frontStore/productView/ProductView.js';
+import e411eb237 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/productView/ProductView.js';
 import e7a0c2356 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/cmsPageView/CmsPageView.js';
 export default renderHtml;
 setAreaComponents('blogRss', {
@@ -6174,10 +6174,10 @@ setAreaComponents('productView', {
       sortOrder: 0,
       component: { default: e5f0a74d0 }
     },
-    e15f778b4: {
-      id: 'e15f778b4',
+    e411eb237: {
+      id: 'e411eb237',
       sortOrder: 10,
-      component: { default: e15f778b4 }
+      component: { default: e411eb237 }
     }
   },
   head: {

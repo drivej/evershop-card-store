@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
     "module": "NodeNext",
+    "baseUrl": "../..",
+    "paths": {
+      "@components/*": [
+        "node_modules/@evershop/evershop/src/components/*"
+      ]
+    },
     "target": "ES2018",
     "lib": ["dom", "dom.iterable", "esnext"],
     "esModuleInterop": true,
