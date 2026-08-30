@@ -91,7 +91,7 @@ function gridCards(rect: { width: number; height: number }, config: CardConfig):
   const spacing = 10;
   const _cardWidth = config.width + spacing;
   const _cardHeight = config.height + spacing;
-  const rows = Math.floor(rect.height / _cardHeight) + 1;
+  const rows = Math.floor(rect.height / _cardHeight) + 2;
   const cols = Math.floor(rect.width / _cardWidth) + 2;
   const totalCards = rows * cols;
   const cards: Card[] = [];
