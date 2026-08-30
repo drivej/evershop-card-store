@@ -19,8 +19,9 @@ import e3d6b4290 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modu
 import e723dfbc6 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/notFound/NotFound.js';
 import e2a913111 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/customer/pages/frontStore/all/CustomerIcon.js';
 import e20afd2e4 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/sample/dist/pages/frontStore/all/FreeShippingMessage.js';
+import e28d58679 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/AppVersion.js';
+import e0221754e from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/CustomFooter.js';
 import e7d267be4 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/InstagramLink.js';
-import e296ac657 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/MyFooter.js';
 import e1ec9751b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/blog/components/frontStore/FeaturedBlogs.js';
 import e1227c06d from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/RelatedProducts.js';
 import e73ee597b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/FrequentlyBoughtTogether.js';
@@ -69,10 +70,10 @@ setAreaComponents('notFound', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -141,6 +142,13 @@ setAreaComponents('notFound', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {

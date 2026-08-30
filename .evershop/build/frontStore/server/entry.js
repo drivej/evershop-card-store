@@ -14,8 +14,9 @@ import e426029f0 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modu
 import e0df7cfd2 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/all/MiniCartIcon.js';
 import e2a913111 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/customer/pages/frontStore/all/CustomerIcon.js';
 import e20afd2e4 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/sample/dist/pages/frontStore/all/FreeShippingMessage.js';
+import e28d58679 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/AppVersion.js';
+import e0221754e from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/CustomFooter.js';
 import e7d267be4 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/InstagramLink.js';
-import e296ac657 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/MyFooter.js';
 import e1ec9751b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/blog/components/frontStore/FeaturedBlogs.js';
 import e1227c06d from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/RelatedProducts.js';
 import e73ee597b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/FrequentlyBoughtTogether.js';
@@ -72,6 +73,7 @@ import e186a0d6f from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modu
 import e65124cad from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/blog/pages/frontStore/blogTagView/BlogTagView.js';
 import e1b09e3ea from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/pages/frontStore/categoryView/CategoryView.js';
 import e411eb237 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/productView/ProductView.js';
+import e7f5c7a87 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/productView/CardsCategoryContent.js';
 import e7a0c2356 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/cms/pages/frontStore/cmsPageView/CmsPageView.js';
 export default renderHtml;
 setAreaComponents('blogRss', {
@@ -96,10 +98,10 @@ setAreaComponents('blogRss', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -158,6 +160,13 @@ setAreaComponents('blogRss', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -315,10 +324,10 @@ setAreaComponents('customerLoginJson', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -377,6 +386,13 @@ setAreaComponents('customerLoginJson', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -534,10 +550,10 @@ setAreaComponents('customerLogoutJson', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -596,6 +612,13 @@ setAreaComponents('customerLogoutJson', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -753,10 +776,10 @@ setAreaComponents('login', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -820,6 +843,13 @@ setAreaComponents('login', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -977,10 +1007,10 @@ setAreaComponents('orderList', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -1044,6 +1074,13 @@ setAreaComponents('orderList', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -1201,10 +1238,10 @@ setAreaComponents('register', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -1268,6 +1305,13 @@ setAreaComponents('register', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -1425,10 +1469,10 @@ setAreaComponents('resetPasswordPage', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -1492,6 +1536,13 @@ setAreaComponents('resetPasswordPage', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -1649,10 +1700,10 @@ setAreaComponents('stripeReturn', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -1711,6 +1762,13 @@ setAreaComponents('stripeReturn', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -1868,10 +1926,10 @@ setAreaComponents('blogHome', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -1935,6 +1993,13 @@ setAreaComponents('blogHome', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -2092,10 +2157,10 @@ setAreaComponents('catalogSearch', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -2159,6 +2224,13 @@ setAreaComponents('catalogSearch', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -2316,10 +2388,10 @@ setAreaComponents('cart', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -2383,6 +2455,13 @@ setAreaComponents('cart', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -2540,10 +2619,10 @@ setAreaComponents('checkout', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -2629,6 +2708,13 @@ setAreaComponents('checkout', {
       id: 'e1d1a21d3',
       sortOrder: 10,
       component: { default: e1d1a21d3 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -2786,10 +2872,10 @@ setAreaComponents('homepage', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -2858,6 +2944,13 @@ setAreaComponents('homepage', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -3015,10 +3108,10 @@ setAreaComponents('images', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -3077,6 +3170,13 @@ setAreaComponents('images', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -3234,10 +3334,10 @@ setAreaComponents('notFound', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -3306,6 +3406,13 @@ setAreaComponents('notFound', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -3463,10 +3570,10 @@ setAreaComponents('account', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -3530,6 +3637,13 @@ setAreaComponents('account', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -3687,10 +3801,10 @@ setAreaComponents('about', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -3754,6 +3868,13 @@ setAreaComponents('about', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -3911,10 +4032,10 @@ setAreaComponents('foo', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -3973,6 +4094,13 @@ setAreaComponents('foo', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -4130,10 +4258,10 @@ setAreaComponents('checkoutSuccess', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -4218,6 +4346,13 @@ setAreaComponents('checkoutSuccess', {
       id: 'e625b468e',
       sortOrder: 10,
       component: { default: e625b468e }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -4375,10 +4510,10 @@ setAreaComponents('orderTracking', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -4442,6 +4577,13 @@ setAreaComponents('orderTracking', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -4599,10 +4741,10 @@ setAreaComponents('orderView', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -4666,6 +4808,13 @@ setAreaComponents('orderView', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -4823,10 +4972,10 @@ setAreaComponents('paypalCancel', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -4885,6 +5034,13 @@ setAreaComponents('paypalCancel', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -5042,10 +5198,10 @@ setAreaComponents('paypalReturn', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -5109,6 +5265,13 @@ setAreaComponents('paypalReturn', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -5266,10 +5429,10 @@ setAreaComponents('blogCategoryView', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -5333,6 +5496,13 @@ setAreaComponents('blogCategoryView', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -5490,10 +5660,10 @@ setAreaComponents('blogPostView', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -5557,6 +5727,13 @@ setAreaComponents('blogPostView', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -5714,10 +5891,10 @@ setAreaComponents('blogTagView', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -5781,6 +5958,13 @@ setAreaComponents('blogTagView', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -5938,10 +6122,10 @@ setAreaComponents('categoryView', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -6005,6 +6189,13 @@ setAreaComponents('categoryView', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -6162,10 +6353,10 @@ setAreaComponents('productView', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -6229,6 +6420,20 @@ setAreaComponents('productView', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
+    }
+  },
+  productPageBottom: {
+    e7f5c7a87: {
+      id: 'e7f5c7a87',
+      sortOrder: 10,
+      component: { default: e7f5c7a87 }
     }
   },
   '*': {
@@ -6386,10 +6591,10 @@ setAreaComponents('cmsPageView', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -6453,6 +6658,13 @@ setAreaComponents('cmsPageView', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
@@ -6610,10 +6822,10 @@ setAreaComponents('landingPageView', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -6672,6 +6884,13 @@ setAreaComponents('landingPageView', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {

@@ -22,8 +22,9 @@ import e2a913111 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modu
 import e5888fd13 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/paypal/pages/frontStore/checkout/Paypal.js';
 import e1d1a21d3 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/stripe/pages/frontStore/checkout/Stripe.js';
 import e20afd2e4 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/sample/dist/pages/frontStore/all/FreeShippingMessage.js';
+import e28d58679 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/AppVersion.js';
+import e0221754e from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/CustomFooter.js';
 import e7d267be4 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/InstagramLink.js';
-import e296ac657 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/MyFooter.js';
 import e1ec9751b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/blog/components/frontStore/FeaturedBlogs.js';
 import e1227c06d from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/RelatedProducts.js';
 import e73ee597b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/catalog/components/FrequentlyBoughtTogether.js';
@@ -72,10 +73,10 @@ setAreaComponents('checkout', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -161,6 +162,13 @@ setAreaComponents('checkout', {
       id: 'e1d1a21d3',
       sortOrder: 10,
       component: { default: e1d1a21d3 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {

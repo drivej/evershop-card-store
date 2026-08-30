@@ -1,0 +1,6 @@
+@layer utilities {
+  .footer__top {
+    /* Add or modify any styling using Tailwind classes */
+    @apply bg-zinc-900 text-white py-12 px-6 border-b border-zinc-800;
+  }
+}

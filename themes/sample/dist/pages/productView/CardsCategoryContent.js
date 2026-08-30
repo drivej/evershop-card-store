@@ -31,11 +31,11 @@ export default function CardsCategoryContent({ product }) {
         className: "font-semibold"
     }, "Official Card Store of RareCardHunterz"));
 }
-export const Xlayout = {
+export const layout = {
     areaId: 'productPageBottom',
     sortOrder: 10
 };
-export const Xquery = `
+export const query = `
   query Query {
     product: currentProduct {
       category {

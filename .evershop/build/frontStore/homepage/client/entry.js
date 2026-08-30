@@ -17,8 +17,9 @@ import e426029f0 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modu
 import e0df7cfd2 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/checkout/pages/frontStore/all/MiniCartIcon.js';
 import e2a913111 from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/customer/pages/frontStore/all/CustomerIcon.js';
 import e20afd2e4 from 'file:///Users/jasoncontento/lab/my-evershop-app/extensions/sample/dist/pages/frontStore/all/FreeShippingMessage.js';
+import e28d58679 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/AppVersion.js';
+import e0221754e from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/CustomFooter.js';
 import e7d267be4 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/InstagramLink.js';
-import e296ac657 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/all/MyFooter.js';
 import e28e1d967 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/homepage/Hero.js';
 import e1763f787 from 'file:///Users/jasoncontento/lab/my-evershop-app/themes/sample/dist/pages/homepage/OnlyHomePage.js';
 import e1ec9751b from 'file:///Users/jasoncontento/lab/my-evershop-app/node_modules/@evershop/evershop/dist/modules/blog/components/frontStore/FeaturedBlogs.js';
@@ -69,10 +70,10 @@ setAreaComponents('homepage', {
       sortOrder: 0,
       component: { default: e20afd2e4 }
     },
-    e296ac657: {
-      id: 'e296ac657',
-      sortOrder: 100,
-      component: { default: e296ac657 }
+    e28d58679: {
+      id: 'e28d58679',
+      sortOrder: 1000,
+      component: { default: e28d58679 }
     }
   },
   content: {
@@ -141,6 +142,13 @@ setAreaComponents('homepage', {
       id: 'e25537413',
       sortOrder: 10,
       component: { default: e25537413 }
+    }
+  },
+  footerBottomRight: {
+    e0221754e: {
+      id: 'e0221754e',
+      sortOrder: 10,
+      component: { default: e0221754e }
     }
   },
   '*': {
